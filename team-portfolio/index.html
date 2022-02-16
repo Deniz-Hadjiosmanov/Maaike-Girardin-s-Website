@@ -5,53 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Young Slavs</title>
 </head>
 
 <body>
-    <h1> We are group "Tadyn"</h1>
-    <h2>Group members:</h2>
-    <ul>
-        <li>
-            <h3>Nikoleta Dimitrova</h3>
-            <p>- I am 20 years old and I am feeling very passionate about the media design field and I
-                want to get the most out of it. I have previous experience with programming but only the basics.
-                Motivated and dedicated, always searching for new things to learn and try.
-            </p>
-        </li>
-        <li>
-            <h3>Yoana Ivanova</h3>
-            <p>
-                - a very hard-working and passionate student. I always want to know more and more about web
-                development. Dog and horse lover. My hobby is reading books and my favourite author is Jane Austen.
-            </p>
-        </li>
-        <li>
-            <h3>Deniz Hadjiosmanov </h3>
-            <p>
-                - I am a 19-year-old Bulgarian and my previous education is related to foreign languages
-                (English and German).
-                I also have a little prior programming experience. Now I want to go into detail in the world of
-                front-end development. When I graduate, I plan to start my company since I am also interested in
-                business.
-            </p>
-        </li>
-        <li>
-            <h3>Toni Dimitrov</h3>
-            <p>
-                - a very ambitious and motivated boy from Bulgaria. Eager to find out the secrets of css,
-                javascript and html, with the help of his teachers and teammates. Possibly tired all the time and lazy,
-                but will do everything in his powers to succeed.
-            </p>
-        </li>
-        <li>
-            <h3> Alek Zanev</h3>
-            <p>
-                - I am 20 years old, anime enthusiast, tall, guitar playing bulgarian boy.
-            </p>
-        </li>
-    </ul>
+    <section class="header">
+        <nav>
+            <!-- MAKING THE NAV BAR -->
+            <a href="index.html"><img src=""></a>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><button onclick="showTeamInfo()"><a>ABOUT US</a></button></li>
+                <li><a href="">IDEAS</a></li>
+                <li><a href="">PROJECT</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+            </div>
+        </nav>
 
+        <div class="text-box">
+            <h1>Welcome To Our Design World!</h1>
+            <p>Our team of “Young Slavs” is eager and inspired to do our best and make the prettiest possible site<br>
+                with all of our present and probably later-acquired from Fontys knowledge and skills.</p>
+        </div>
+    </section>
+
+    <section id="our-group">
+        <h1>Our Group</h1>
+        <p id="intro">
+            We would love to meet you and help you achieve your desires!
+        </p>
+        <div class="row">
+            <div class="group-col">
+                <h3>Nikoleta Dimitrova</h3>
+                <img src="images/Nikoleta.jpg" alt="">
+                <p>I am 20 years old and I am feeling very passionate about the media design field and I
+                    want to get the most out of it. 
+                    <br>
+                    I have previous experience with programming but only the basics.
+                    Motivated and dedicated, always searching for new things to learn and try.
+                </p>
+            </div>
+            <div class="group-col">
+                <h3>Yoana Ivanova</h3>
+                <img src="images/Yoana.jpg" alt="">
+                <p>A very hard-working and passionate student. I always want to know more and more about web
+                    development. My hobby is reading books and my favourite author is Jane Austen. I am obssesed with
+                    fashion and make-up and I like trying new things.
+                </p>
+            </div>
+            <div class="group-col">
+                <h3>Deniz Hadjiosmanov</h3>
+                <img src="images/Deniz.jpg" alt="">
+                <p>I am a 19-year-old Bulgarian and my previous education is related to foreign languages
+                    (English and German).
+                    I also have a little prior programming experience. Now I want to go into detail in the world of
+                    front-end development. When I graduate, I plan to start my company since I am also interested in
+                    business.
+                </p>
+            </div>
+            <div class="group-col">
+                <h3>Toni Dimitrov</h3>
+                <img src="images/Toni.jpg" alt="">
+                <p>A very ambitious and motivated boy from Bulgaria. Eager to find out the secrets of css,
+                    javascript and html, with the help of his teachers and teammates. Possibly tired all the time and
+                    lazy, but will do everything in his powers to succeed.
+                </p>
+            </div>
+            <div class="group-col">
+                <h3>Alek Zanev</h3>
+                <img src="images/Alek.jpg" alt="">
+                <p>Hey, I am Alek. I am a bulgarian student, studying ICT at Fontys Eindhoven. The more knowledge I
+                    gather in the field of web design, the more my passion for it grows. Together with my team, we want
+                    to give you our best product, that satisfies all your needs. Welcome!
+                </p>
+            </div>
+
+        </div>
+    </section>
+<script src="script.js"></script>
 </body>
 
 </html>
