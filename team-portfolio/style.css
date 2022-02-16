@@ -1,9 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
-	/* removes the spaces formed */
 	font-family: 'Poppins', sans-serif;
 }
+
+html {scroll-behavior: smooth;}
 
 .header {
 	min-height: 100vh;
@@ -12,7 +13,6 @@
 	background-position: center;
 	background-size: cover;
 	position: relative;
-	/* places the picture on the whole screen */
 }
 .header button {
     background-color: transparent;
@@ -61,7 +61,6 @@ nav ul li::after {
 
 nav ul li:hover::after {
 	width: 100%;
-	/* we make the line visible when we hover */
 }
 
 .text-box {
@@ -111,7 +110,7 @@ nav ul li:hover::after {
 
 /* group part of the page */
 #our-group {
-	width: 98%;
+	width: 80%;
 	margin:auto;
 	text-align: center;
 	padding-top: 80px;
@@ -136,14 +135,13 @@ p {
 	font-weight: 300;
 	line-height: 22px;
 	padding: 10px;
-
 }
 
 .row {
 	margin-top: 5%;
 	display: flex;
 	justify-content: space-between;
-	/* how to align them next to each other */
+	margin-left: -60px;
 }
 
 .group-col {
@@ -153,14 +151,14 @@ p {
 	margin-bottom: 5%;
 	box-sizing: border-box;
 	transition: 0.5s;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-top: -30px;
-    min-width: 266px;
+    min-width: 20%;
 
 }
 
 #our-group img{
-    width: 70%;
+    width: 60%;
     height: auto;
     border-radius: 7px;
 }
@@ -172,7 +170,6 @@ h3 {
 }
 
 .group-col:hover {
-	/* making a shadow when hovered */
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.589);
 }
 
