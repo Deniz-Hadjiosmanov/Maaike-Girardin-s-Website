@@ -33,13 +33,11 @@ nav {
 
 nav img {
 	width: 90px;
-	/* to change the size of the logo */
 }
 
 nav ul li {
 	list-style: none;
 	display: inline-block;
-	/* it will come horizontally */
 	padding: 8px 12px;
 	position: relative;
 }
@@ -53,7 +51,6 @@ nav ul li a {
 nav ul li::after {
 	content: '';
 	width: 0%;
-	/* we make it invisible with this, if we leave it at 100% we will see the line */
 	height: 2px;
 	background: #55a7c7;
 	display: block;
@@ -74,7 +71,6 @@ nav ul li:hover::after {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/* it will be placed in the centre of the div */
 	text-align: center;
 }
 
@@ -84,7 +80,6 @@ nav ul li:hover::after {
 
 .text-box p {
 	margin: 10px 0 40px;
-	/* 10px from top, 0 from left and right and 40 from the bottom */
 	font-size: 18px;
 	color: white;
 }
@@ -94,7 +89,6 @@ nav ul li:hover::after {
 		font-size: 20px;
 	}
 
-	/* making the nav bar openable from the one side */
 	nav ul li {
 		display: block;
 	}
@@ -105,19 +99,17 @@ nav ul li:hover::after {
 		width: 200px;
 		top: 0;
 		right: -200px;
-		/* to hide the menu */
 		text-align: left;
 		z-index: 2;
 		transition: 1s;
 	}
 
 	nav ul {
-		/* to make some space between the content of the navigation bar */
 		padding: 30px;
 	}
 }
 
-/* course part of the page */
+/* group part of the page */
 #our-group {
 	width: 98%;
 	margin:auto;
@@ -186,7 +178,6 @@ h3 {
 
 @media (max-width: 700px) {
 	.row {
-		/* to make the coloms come one after another */
 		flex-direction: column;
 	}
 }
