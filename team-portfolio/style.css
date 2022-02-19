@@ -179,3 +179,12 @@ h3 {
 		flex-direction: column;
 	}
 }
+
+/* ideas part of the page */
+#ideas {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+	background-color:#a0ccdd;
+}
