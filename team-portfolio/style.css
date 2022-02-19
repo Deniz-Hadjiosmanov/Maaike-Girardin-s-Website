@@ -107,6 +107,52 @@ nav ul li:hover::after {
 	nav ul {
 		padding: 30px;
 	}
+
+	nav a img{
+		position: absolute;
+		top: 5%;
+		left: -140%;
+	}
+
+	#linecontainer{
+		position: absolute;
+		width: 15%;
+		height: 6%;
+		left: 0%;
+		top: 3%;
+		cursor: pointer;
+		}
+	  
+		#firstline{
+		  position: relative;
+		  width: 80%;
+		  height: 0px;
+		  left: 0%;
+		  top: 20%;
+		  border-top: 3px solid #FFFFFF;
+		  cursor: pointer;
+		}
+	  
+		#secondline{
+		  position: relative;
+		  width: 50%;
+		  height: 0px;
+		  left: 0%;
+		  top: 40%;
+		  border-top: 3px solid #FFFFFF;
+		  cursor: pointer;
+		}
+	  
+		#thirdline{
+		  position: relative;
+		  width: 80%;
+		  height: 0px;
+		  left: 0%;
+		  top: 60%;
+		  border-top: 3px solid #FFFFFF;
+		  cursor: pointer;
+		  
+		}
 }
 
 /* group part of the page */
