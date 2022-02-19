@@ -188,3 +188,8 @@ h3 {
 	padding-top: 50px;
 	background-color:#a0ccdd;
 }
+
+#ideas img {
+	width: 16rem;
+	padding: 1rem 1rem;
+}
