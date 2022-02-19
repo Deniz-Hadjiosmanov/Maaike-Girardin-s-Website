@@ -239,3 +239,7 @@ h3 {
 	width: 16rem;
 	padding: 1rem 1rem;
 }
+
+#ideas img:hover {
+	opacity: 0.85;
+}
