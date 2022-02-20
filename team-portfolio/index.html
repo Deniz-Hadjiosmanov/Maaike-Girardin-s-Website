@@ -14,25 +14,33 @@
 </head>
 
 <body>
-    <section class="header">
-        <nav>
-            <!-- MAKING THE NAV BAR -->
-            <a href="index.html"><img src="images/logowhite.png"></a>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a id="about-us" href="#intro">ABOUT US</a></li>
-                <li><a id="idea" href="#inspo">IDEAS</a></li>
-                <li><a href="">PROJECT</a></li>
-                <li><a href="">CONTACT US</a></li>
-            </ul>
-            <div id="linecontainer" onclick="toggleNav()">
-                <div id="firstline"></div>
-                <div id="secondline"></div>
-                <div id="thirdline"></div>
+    <section class="home-page">
+        <header>
+            <a href="index.html"><img id="logo" src="images/logowhite.png"></a>
+            <nav>
+                <ul class="desktop-menu">
+                    <li><a href="">HOME</a></li>
+                    <li><a id="about-us" href="#intro">ABOUT US</a></li>
+                    <li><a id="idea" href="#inspo">IDEAS</a></li>
+                    <li><a href="">PROJECT</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-menu" onclick="openMobileMenu(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <ul class="responsive-menu">
+                    <br>
+                    <br>
+                    <li><a href="">HOME</a></li>
+                    <li><a id="about-us" href="#intro">ABOUT US</a></li>
+                    <li><a id="idea" href="#inspo">IDEAS</a></li>
+                    <li><a href="">PROJECT</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
             </div>
-            </div>
-        </nav>
-
+        </header>
         <div class="text-box">
             <h1>Welcome To Our Design World!</h1>
             <p>Our team “Webify” is eager and inspired to do our best and make the prettiest possible site<br>
@@ -119,7 +127,7 @@
         <img src="images/1x/orangenote.png">
 
     </section>
-    <!--script src="main.js"></script-->
+    <script src="main.js"></script>
 </body>
 
 </html>
