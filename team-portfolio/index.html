@@ -23,7 +23,7 @@
                     <li><a id="about-us" href="#intro">ABOUT US</a></li>
                     <li><a id="idea" href="#inspo">IDEAS</a></li>
                     <li><a href="">PROJECT</a></li>
-                    <li><a id="contact-us" href="#contactus">CONTACT US</a></li>
+                    <li><a id="contact-us" href="#contact-us-main">CONTACT US</a></li>
                 </ul>
             </nav>
             <div id="hamburger-menu" onclick="openMobileMenu(this)">
@@ -37,7 +37,7 @@
                     <li><a id="about-us" href="#intro">ABOUT US</a></li>
                     <li><a id="idea" href="#inspo">IDEAS</a></li>
                     <li><a href="">PROJECT</a></li>
-                    <li><a href="#contactus">CONTACT US</a></li>
+                    <li><a href="#contact-us-main">CONTACT US</a></li>
                 </ul>
             </div>
         </header>
@@ -128,32 +128,29 @@
 
     </section>
 
-    <section id="contactus">
-        <h1 id="contact-us">Contact Us!</h1>
-        <p id="textcontactbelow">
+    <section id="contact-us-main">
+        <h1 id="contact-us-head">Contact Us!</h1>
+        <p id="text-contact-below">
             Please enter your cridentials and we'll get in touch with you as fast as possible!
         </p>
         <br>
-        <div class="mainbox">
-            <div class="title">
-            </div>
-            <div class="contact-form">
+        <div class="main-box">
+            <form id="form-1" class="contact-form">
                 <div class="input-boxes">
-                    <input type="text" class="input" placeholder="Name">
-                    <input type="text" class="input" id='txtEmail' placeholder="Email Address">
-                    <input type="text" class="input" placeholder="Phone">
-                    <input type="text" class="input" placeholder="Subject">
+                    <input type="text" class="input" placeholder="Name" required>
+                    <input type="text" class="input" id='txtEmail' placeholder="Email Address" required>
+                    <input type="text" class="input" placeholder="Phone" required>
+                    <input type="text" class="input" placeholder="Subject" required>
                 </div>
-                <div class="messagebox">
-                    <textarea placeholder="Message" maxlength="300"></textarea>
-                    <button class="btnform" onclick='Javascript:checkEmail();'>SEND</button>
+                <div class="message-box">
+                    <textarea placeholder="Message" maxlength="300" required></textarea>
+                    <button type="submit" form="form-1" form="contact-us-main" class="btn-form">SEND</button>
                 </div>
-            </div>
+            </form>
         </div>
 
     </section>
     <script src="main.js"></script>
-    <script src="emailvalidation.js"></script>
 </body>
 
 </html>
