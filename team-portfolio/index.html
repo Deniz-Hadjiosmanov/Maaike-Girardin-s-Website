@@ -23,7 +23,7 @@
                     <li><a id="about-us" href="#intro">ABOUT US</a></li>
                     <li><a id="idea" href="#inspo">IDEAS</a></li>
                     <li><a href="">PROJECT</a></li>
-                    <li><a href="">CONTACT US</a></li>
+                    <li><a id="contact-us" href="#contactus">CONTACT US</a></li>
                 </ul>
             </nav>
             <div id="hamburger-menu" onclick="openMobileMenu(this)">
@@ -37,7 +37,7 @@
                     <li><a id="about-us" href="#intro">ABOUT US</a></li>
                     <li><a id="idea" href="#inspo">IDEAS</a></li>
                     <li><a href="">PROJECT</a></li>
-                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="#contactus">CONTACT US</a></li>
                 </ul>
             </div>
         </header>
@@ -127,7 +127,33 @@
         <img src="images/1x/orangenote.png">
 
     </section>
+
+    <section id="contactus">
+        <h1 id="contact-us">Contact Us!</h1>
+        <p id="textcontactbelow">
+            Please enter your cridentials and we'll get in touch with you as fast as possible!
+        </p>
+        <br>
+        <div class="mainbox">
+            <div class="title">
+            </div>
+            <div class="contact-form">
+                <div class="input-boxes">
+                    <input type="text" class="input" placeholder="Name">
+                    <input type="text" class="input" id='txtEmail' placeholder="Email Address">
+                    <input type="text" class="input" placeholder="Phone">
+                    <input type="text" class="input" placeholder="Subject">
+                </div>
+                <div class="messagebox">
+                    <textarea placeholder="Message" maxlength="300"></textarea>
+                    <button class="btnform" onclick='Javascript:checkEmail();'>SEND</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <script src="main.js"></script>
+    <script src="emailvalidation.js"></script>
 </body>
 
 </html>
