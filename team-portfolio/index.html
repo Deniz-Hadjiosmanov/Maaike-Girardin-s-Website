@@ -131,25 +131,25 @@
     <section id="contact-us-main">
         <h1 id="contact-us-head">Contact Us!</h1>
         <p id="text-contact-below">
-            Please enter your cridentials and we'll get in touch with you as fast as possible!
+            Please enter your cridentials and we will get in touch with you as fast as possible!
         </p>
         <br>
         <div class="main-box">
             <form id="form-1" class="contact-form">
                 <div class="input-boxes">
-                    <input type="text" class="input" placeholder="Name" required>
+                    <input type="text" class="input" placeholder="Full Name" required>
                     <input type="text" class="input" id='txtEmail' placeholder="Email Address" required>
                     <input type="text" class="input" placeholder="Phone" required>
                     <input type="text" class="input" placeholder="Subject" required>
+                    <div class="message-box">
+                        <textarea placeholder="Message" maxlength="300" required></textarea>
+                    </div>
                 </div>
-                <div class="message-box">
-                    <textarea placeholder="Message" maxlength="300" required></textarea>
-                    <button type="submit" form="form-1" form="contact-us-main" class="btn-form">SEND</button>
-                </div>
+                <button class="btn-form" onsubmit="submitForm()">SEND</button>
             </form>
         </div>
-
     </section>
+    
     <script src="main.js"></script>
 </body>
 

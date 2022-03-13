@@ -6,6 +6,7 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
@@ -268,65 +269,38 @@ h3 {
 }
 
 /*contact us part of the page */
-#contact-us-head{
-	width: 500px;
-	margin: auto;
+#contact-us-main{
+	min-height: 100vh;
+	width: 100%;
 	text-align: center;
 	padding-top: 50px;
 }
-#text-contact-below{
-	width: 500px;
-	margin: auto;
-	text-align: center;
-}
 .main-box{
-	position: absolute;
-	transform: translate(450px);
-	width: 900px;
-	max-width: 950px;
+	transform: translateY(-0.1rem);
 	background: none;
-	padding: 30px;
 	border-radius: 10px;
 }
 
-.main-box .title h1{
-	color: #000000;
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-.contact-form{
-	display: flex;
-}
-
-.input-boxes{
-	display: flex;
-	flex-direction: column;
-	margin-right: 40px;
+.input-boxes {
+	margin-left: auto; margin-right: auto;
 }
 
 .input-boxes, .message-box{
 	width: 800px;
 }
 
-.input-boxes .input, .message-box textarea{
+.input, textarea{
 	margin: 10px 0;
 	background: transparent;
-	border: 0px;
-	border-bottom: 1px solid #000000;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-top: 1px solid #000000;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
+	border-radius: 10px;
+	border:  1px solid black;
 	padding: 10px;
 	color: #000000;
 	width: 450px;
 }
+
 .message-box textarea{
-	height: 206px;
+	height: 160px;
 	resize:none;
 }
 
@@ -344,40 +318,27 @@ h3 {
 .btn-form {
 background: #8bcce0;
 text-align: center;
-width: 200px;
+width:200px;
 height:35px;
 padding: 5px;
-border:solid 1px #55a7c7;
-border-radius: 50px;
+border-radius: 15px;
 color: rgb(0, 0, 0);
 cursor: pointer;
-transform: translate(-110px,10px);
+transform: translateY(1rem);
 transition: 0.7s ease-in-out;
 }
 .btn-form:hover {
 	transition: 0.7s ease-in-out;
-	background: #4F95DA;
+	background: #55a7c7;
+	color: white;
 }
 @media screen and (max-width: 700px){
-.main-box{
-	transform: translate(50px,-20px);
-	width: 500px;
-}
-.contact-form{
-	flex-direction: column;
-}
-.message-box textarea{
-	height: 80px;
-}
-.input-boxes,.message-box{
-	width: 500px;
-}
-.btn-form{
-	transform: translate(60px,0px);
-	width:400px;
-}
-#text-contact-below{
-	font-size:18px;
-	padding:1px;
-}
+	.input-boxes, textarea {
+		width: 90%;
+	}
+	.input, .message-box{
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
 }
