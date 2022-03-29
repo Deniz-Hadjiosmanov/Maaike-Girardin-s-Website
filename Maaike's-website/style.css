@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body{
+	background-color: #f3e9d3;
+}
+
+/* home page */
 .container-menu {
     display: flex;
     width: 100%;
@@ -16,19 +21,20 @@
 }
 
 .box-menu-logo img{
-    width: 9rem;
+    width: 7rem;
     flex: 1;
-    margin-left: 5rem;
+    margin-left: 3rem;
+	margin-top: 1rem;
 }
 
 .box-menu-navigation {
-    flex: 1;
+    flex: 1.2;
 }
 
 .box-menu-navigation ul li {
     display: inline-block; 
     list-style: none;
-    margin: 1rem 1rem;
+    margin: 2rem 1.4rem;
  }
  
  .box-menu-navigation ul li a {
@@ -38,7 +44,7 @@
      font-family: 'Rubik', sans-serif;
      font-weight: 700;
      text-transform: uppercase;
-     font-size: 1rem;
+     font-size: 1.1rem;
  }
 
  .box-menu-language {
@@ -48,6 +54,7 @@
 
 .container-body {
     display: flex;
+    margin-top: .5rem;
 }
 
 .box-body-tree {
@@ -56,12 +63,16 @@
 }
 
 .box-body-photo {
-    background-color: blue;
-    flex: 1;
+    flex: .5;
+}
+
+.box-body-photo img{
+    width: 22rem;
+    height: 32rem;
 }
 
 .box-body-song {
-    background-color: brown;
+    background-color: rgb(218, 132, 132);
     flex: 1;
 }
 
@@ -72,3 +83,6 @@ footer {
     bottom: 0;
     background-color: blanchedalmond;
 }
+
+
+
