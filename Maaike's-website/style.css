@@ -45,3 +45,30 @@
     flex: 1;
     text-align: center;
 }
+
+.container-body {
+    display: flex;
+}
+
+.box-body-tree {
+    background-color: aquamarine;
+    flex: 1;
+}
+
+.box-body-photo {
+    background-color: blue;
+    flex: 1;
+}
+
+.box-body-song {
+    background-color: brown;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: blanchedalmond;
+}
