@@ -4,7 +4,11 @@
 }
 
 body{
-	background-color: #f3e9d3;
+	background-color: #e8efe2;
+}
+
+.body-home {
+    overflow-y: hidden;
 }
 
 /* home page */
@@ -13,6 +17,7 @@ body{
     width: 100%;
     justify-content: space-between;
     padding: 0.5rem 0;
+    flex-wrap: wrap;
 }
 
 .box-menu-logo {
@@ -44,7 +49,7 @@ body{
      font-family: 'Rubik', sans-serif;
      font-weight: 700;
      text-transform: uppercase;
-     font-size: 1.1rem;
+     font-size: 1rem;
  }
 
  .box-menu-language {
@@ -54,7 +59,7 @@ body{
 
 .container-body {
     display: flex;
-    margin-top: .5rem;
+    flex-wrap: wrap;
 }
 
 .box-body-tree {
@@ -63,12 +68,38 @@ body{
 }
 
 .box-body-photo {
-    flex: .5;
+    flex: 1;
+    font-family: 'Bitter', serif;
+    font-weight: 600;
+    background-color: #e8efe2;
 }
 
 .box-body-photo img{
+    position: relative;
+    top: 1.4rem;
     width: 22rem;
     height: 32rem;
+    border-radius: 0.3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#name-first {
+    position: relative;
+    background-color: #e8efe2;
+    width: 33%;
+    font-size: 3rem;
+    transform: translateY(-12rem);
+}
+
+#name-second {
+    position: relative;
+    background-color: #e8efe2;
+    width: 38%;
+    font-size: 3rem;
+    transform: translateY(-11rem);
+    padding-left: 1.2rem;
 }
 
 .box-body-song {
@@ -77,11 +108,23 @@ body{
 }
 
 footer {
-    display: flex;
+    display: inline-block;
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: blanchedalmond;
+    background-color: #e8efe2;
+    padding-bottom: 1.8rem;
+    text-align: center;
+}
+
+footer img {
+    width: 1.8%;
+    padding: 0 0.5rem;
+}
+
+footer img:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 
