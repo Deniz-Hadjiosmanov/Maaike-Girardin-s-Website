@@ -4,7 +4,7 @@
 }
 
 body{
-	background-color: #e8efe2;
+	background-color: #eaefe7;
 }
 
 .body-home {
@@ -26,6 +26,7 @@ body{
 }
 
 .box-menu-logo img{
+    display: block;
     width: 7rem;
     flex: 1;
     margin-left: 3rem;
@@ -63,15 +64,21 @@ body{
 }
 
 .box-body-tree {
-    background-color: aquamarine;
     flex: 1;
+}
+
+.box-body-tree img {
+    position: relative;
+    top: 15%;
+    right: 9%;
+    width: 90%;
 }
 
 .box-body-photo {
     flex: 1;
     font-family: 'Bitter', serif;
     font-weight: 600;
-    background-color: #e8efe2;
+    background-color: #eaefe7;
 }
 
 .box-body-photo img{
@@ -87,7 +94,7 @@ body{
 
 #name-first {
     position: relative;
-    background-color: #e8efe2;
+    background-color: #eaefe7;
     width: 33%;
     font-size: 3rem;
     transform: translateY(-12rem);
@@ -95,7 +102,7 @@ body{
 
 #name-second {
     position: relative;
-    background-color: #e8efe2;
+    background-color: #eaefe7;
     width: 38%;
     font-size: 3rem;
     transform: translateY(-11rem);
@@ -112,7 +119,7 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: #e8efe2;
+    background-color: #eaefe7;
     padding-bottom: 1.8rem;
     text-align: center;
 }
