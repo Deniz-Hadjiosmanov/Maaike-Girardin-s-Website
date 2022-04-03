@@ -21,16 +21,15 @@ body{
 }
 
 .box-menu-logo {
-    width: 9rem;
     flex: 1;
 }
 
 .box-menu-logo img{
     display: block;
-    width: 7rem;
+    width: 8rem;
     flex: 1;
-    margin-left: 3rem;
-	margin-top: 1rem;
+    margin-left: 7rem;
+	margin-top: 1.5rem;
 }
 
 .box-menu-navigation {
@@ -54,10 +53,26 @@ body{
  }
 
  .box-menu-language {
+    display: flex;
+    flex-direction: row;
     flex: 1;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
+.box-menu-language .lang-button{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.vertical-line{
+    padding: .3rem;
+}
 .container-body {
     display: flex;
     flex-wrap: wrap;
