@@ -127,16 +127,18 @@ body{
 .box-body-song {
     flex: 1;
     position:relative;
-    margin: auto;
+    margin:auto;
     text-align:center;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
+    bottom: 1.4rem;
 }
 #box-body-song-text{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
     margin-top: 0.5rem;
 }
 iframe{
-border-radius: 0.7rem;
+    border-radius: 0.7rem;
 }
 
 footer {
