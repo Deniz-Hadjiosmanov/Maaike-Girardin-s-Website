@@ -125,8 +125,18 @@ body{
 }
 
 .box-body-song {
-    background-color: rgb(218, 132, 132);
     flex: 1;
+    position:relative;
+    margin: auto;
+    text-align:center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+#box-body-song-text{
+    margin-top: 0.5rem;
+}
+iframe{
+border-radius: 0.7rem;
 }
 
 footer {
