@@ -47,12 +47,46 @@
                     <button class="lang-button">IT</button>
                 </a>
             </div>
+
+            <div id="hamburger-menu" onclick="openMobileMenu(this)">
+                <div class="lines">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="responsive-menu">
+                    <a id="exit"><img src="exitIcon.png" alt=""></a>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Listen now</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact me</a></li>
+                    <div class="box-menu-language" id="mobile-language-menu">
+                        <!-- english version -->
+                        <a href="index.html">
+                            <button class="lang-button">EN</button>
+                        </a>
+                        <div class="vertical-line"><b>|</b></div>
+                        <!-- dutch version -->
+                        <a href="index-nl.html">
+                            <button class="lang-button">NL</button>
+                        </a>
+                        <div class="vertical-line"><b>|</b></div>
+                        <!-- italian version -->
+                        <a href="index-it.html">
+                            <button class="lang-button">IT</button>
+                        </a>
+                    </div>
+                </ul>
+            </div>
         </div>
     </header>
 
     <div class="container-body">
-        <div class="box-body-tree"><img src="images/treeone.svg"></div>
-        <div class="box-body-photo"><img src="images/Maaike_home.jpg" alt="Maaike">
+        <div class="box-body-tree">
+            <img src="images/treeone.svg">
+        </div>
+        <div class="box-body-photo">
+            <img src="images/Maaike_home.jpg" alt="Maaike">
             <p id="name-first">Maaike</p>
             <p id="name-second">Girardin</p>
         </div>
@@ -76,7 +110,7 @@
         <a href="https://www.youtube.com/channel/UCGYdNWNWy2jfU6xD6JN6xig" target="_blank"><img
                 src="images/youtube-brands.svg"></a>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
