@@ -115,13 +115,7 @@ body {
 
 .box-body-tree {
     flex: 1;
-}
-
-.box-body-tree img {
-    position: relative;
-    top: 15%;
-    right: 9%;
-    width: 90%;
+    margin-top: 90px;
 }
 
 .box-body-photo {
@@ -134,7 +128,7 @@ body {
 .box-body-photo img {
     position: relative;
     top: 1.4rem;
-    width: 22rem;
+    width: auto;
     height: 32rem;
     border-radius: 0.3rem;
     display: block;
