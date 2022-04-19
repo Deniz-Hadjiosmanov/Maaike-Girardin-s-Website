@@ -24,6 +24,11 @@ body {
     flex: 1;
 }
 
+.box-menu-logo:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
 .box-menu-logo img {
     display: block;
     width: 8rem;
@@ -55,20 +60,6 @@ body {
     transform: scale(1.1);
     transition: 0.4s;
 }
-
-/* .box-menu-navigation li::after{
-        content: '';
-        width: 0%;
-        height: 2px;
-        background: #6A994E;
-        display: block;
-        margin: auto;
-        transition: 0.6s;
-    }
-
-    .box-menu-navigation li:hover::after {
-        width: 100%;
-    } */
 
 .box-menu-navigation ul li a {
     position: relative;
