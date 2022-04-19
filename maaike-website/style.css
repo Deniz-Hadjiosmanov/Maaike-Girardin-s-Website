@@ -265,7 +265,7 @@ footer img:hover {
 }
 
 @media only screen and (max-width: 1150px) {
-    .box-body-tree {
+    .home-box-body-tree {
         display: none;
     }
 }
@@ -359,7 +359,7 @@ footer img:hover {
         list-style: none;
     }
 
-    .box-body-tree {
+    .home-box-body-tree {
         display: none;
     }
 
