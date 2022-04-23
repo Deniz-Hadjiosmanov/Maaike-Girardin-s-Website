@@ -264,6 +264,11 @@ footer img:hover {
     justify-content: flex-start;
 }
 
+@media only screen and (max-width: 1150px) {
+    .home-box-body-tree {
+        display: none;
+    }
+
 @media only screen and (max-width: 1200px) {
     .home-box-body-tree video{
         max-width: 100%;
