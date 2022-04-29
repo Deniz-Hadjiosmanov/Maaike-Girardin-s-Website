@@ -264,12 +264,45 @@ footer img:hover {
     justify-content: flex-start;
 }
 
-@media only screen and (max-width: 1150px) {
-    .home-box-body-tree {
-        display: none;
+@media only screen and (max-width: 1160px) and (min-width: 800px){
+    .home-box-body-tree{
+        display: block;
+    }
+    #name-first {
+    
+        width: 28%;
+        font-size: 2rem;
+
+       margin-left: 13%;
     }
 
+    #name-second {
+    
+        width: 30%;
+        font-size: 2rem;
+       
+        margin-left: 9%;
+    }
+}
+   
 @media only screen and (max-width: 1200px) {
+    .body-home {
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .home-container-body{
+        display: flex;
+        text-align: center;
+        margin: 5%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+   .home-box-body-song{
+       margin: 10% 2%;
+   }
     .home-box-body-tree video{
         max-width: 100%;
         max-height: 100%;
@@ -279,6 +312,7 @@ footer img:hover {
       height: 300px;
       flex: 1;
       transform: translateX(-35px);
+      display: none;
     }
     .box-menu-logo img{
       margin-left: 50px;
@@ -287,16 +321,18 @@ footer img:hover {
     }
     #name-first {
         position: relative;
-        width: 28%;
+        width: 25.5%;
         font-size: 2rem;
         transform: translateY(-11.5rem);
+        margin-left: 5%;
     }
 
     #name-second {
         position: relative;
-        width: 30%;
+        width: 29%;
         font-size: 2rem;
         transform: translateY(-11rem) translateX(1rem);
+        margin-left: -5%;
     }
     .box-menu-navigation {
         flex: 1.2;
@@ -334,13 +370,7 @@ footer img:hover {
     .home-box-body-photo img{
       height: 28rem;
     }
-    .home-box-body-song {
-        flex: 1;
-        position: relative;
-        margin: auto;
-        text-align: center;
-        bottom: 1rem;
-    }
+   
 
     footer{
       display: inline-block;
@@ -350,6 +380,9 @@ footer img:hover {
       background-color: #eaefe7;
       padding-bottom: 0.5rem;
       text-align: center;
+    }
+    footer img{
+        width: 6%;
     }
 
 }
@@ -424,7 +457,7 @@ footer img:hover {
     ul {
         list-style: none;
 
-    }
+    } 
 
     .icons {
         width: 7%;
@@ -466,15 +499,17 @@ footer img:hover {
 
     #name-first {
         position: relative;
-        width: 50%;
+        width: 40%;
         font-size: 3rem;
-        transform: translateY(-12rem);
+        transform: translateY(-12rem);   
     }
 
     #name-second {
         position: relative;
-        width: 55%;
+        width: 45%;
         font-size: 3rem;
-        transform: translateY(-11rem) translateX(-1rem);
+        transform: translateY(-11rem) translateX(-1rem); 
+        margin-left: 13px; 
     }
+  
 }
