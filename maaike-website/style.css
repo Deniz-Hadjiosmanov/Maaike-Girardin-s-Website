@@ -375,16 +375,15 @@ footer img:hover {
     footer{
       display: inline-block;
       width: 100%;
-      position: absolute;
-      bottom: 0;
+      position: relative;
+      bottom: 7px;
       background-color: #eaefe7;
       padding-bottom: 0.5rem;
       text-align: center;
     }
     footer img{
-        width: 6%;
+        width: 3%;
     }
-
 }
 
 @media only screen and (max-width: 775px) {
@@ -439,7 +438,7 @@ footer img:hover {
     }
 
     footer img {
-        width: 5%;
+        width: 27px;
         margin-top: 2rem;
         padding: 0 0.5rem;
     }
