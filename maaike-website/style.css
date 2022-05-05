@@ -475,148 +475,220 @@ footer img:hover {
 
 }
 
-#body-about-me {
+.body-about-me {
     overflow-x: hidden;
 }
 
 #about-me-Maaike-photo {
     position: absolute;
     width: auto;
-    height: 60%;
-    left: 6%;
-    top: 27%;
+    height: 30rem;
+    transform: translate(3rem, 3rem);
+}
+
+#about-me-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+    width: 74.9rem;
+    height: 30rem;
+    transform: translate(20rem, 3rem);
 }
 
 #about-me-know-me {
-    position: absolute;
-    top: 13.5%;
-    left: 24%;
-    height: 27%;
-    width: 75%;
-    flex: 1;
-    background-color: rgb(253, 118, 118);
-    flex-direction: row;
+    position: relative;
+    height: 11rem;
+    width: 70rem;
 }
 
 #about-me-know-me-text {
     position: relative;
-    width: 40%;
-    transform: translate(6rem, 4.5rem);
-    font-size: 20px;
+    text-align: right;
+    transform: translate(37rem, 0rem);
+    width: 35rem;
+    font-size: 18px;
+    font-family: Lato;
 }
 
 #about-me-know-me1 {
-    position: absolute;
-    font-size: 33px;
-    font-family: Rubik;
+    position: relative;
+    transform: translate(6rem, -4rem);
     font-weight: bold;
-    transform: translate(58rem, -6.5rem);
+    font-size: 30px;
+    font-family: Grandstander;
 }
 
-#about-me-know-me2 {
-    position: absolute;
-    font-size: 33px;
-    font-family: Rubik;
-    font-weight: bold;
-    right: -2%;
-    top: 50%;
-    transform: rotate(90deg);
-}
-
-#about-me-know-me2+hr {
-    position: absolute;
-    width: 96%;
+#about-me-know-me1+hr {
+    position: relative;
+    transform: translate(2rem, 0.5rem);
+    width: 72rem;
     height: 1px;
-    top: 101%;
-    left: 1%;
-    color: black;
     background-color: black;
-    border: none;
 }
 
 
 #about-me-hobbies {
-    position: absolute;
-    bottom: 21%;
-    left: 24%;
-    height: 38%;
-    width: 75%;
-    flex: 1;
-    background-color: rgb(253, 118, 118);
-    flex-direction: row;
+    position: relative;
+    height: 11rem;
+    width: 70rem;
+    transform: translate(0rem, 1rem);
 }
 
 #about-me-hobbies-text {
     position: relative;
-    width: 40%;
-    transform: translate(37rem, 6rem);
-    font-size: 20px;
+    text-align: left;
+    transform: translate(4rem, 0.5rem);
+    width: 35rem;
+    font-size: 18px;
+    font-family: Lato;
 }
 
 #about-me-hobbies1 {
-    position: absolute;
-    font-size: 33px;
-    font-family: Rubik;
+    position: relative;
+    transform: translate(62rem, -4rem);
     font-weight: bold;
-    transform: translate(7rem, -3rem);
+    font-size: 30px;
+    font-family: Grandstander;
 }
 
-#about-me-hobbies2 {
-    position: absolute;
-    font-size: 33px;
-    font-family: Rubik;
-    font-weight: bold;
-    left: 2%;
-    top: 56%;
-    transform: rotate(270deg);
-}
-
-#about-me-hobbies2+hr {
-    position: absolute;
-    width: 96%;
+#about-me-hobbies1+hr {
+    position: relative;
+    transform: translate(2rem, 2rem);
+    width: 72rem;
     height: 1px;
-    top: 101%;
-    left: 1%;
-    color: black;
     background-color: black;
-    border: none;
 }
+
 
 
 #about-me-inspirations {
-    position: absolute;
-    bottom: -16%;
-    left: 24%;
-    height: 36%;
-    width: 75%;
-    flex: 1;
-    background-color: rgb(253, 118, 118);
-    flex-direction: row;
+    position: relative;
+    height: 11rem;
+    width: 70rem;
 }
 
 #about-me-inspirations-text {
     position: relative;
-    width: 40%;
-    transform: translate(4rem, 3rem);
-    font-size: 20px;
+    text-align: right;
+    transform: translate(37rem, 4rem);
+    width: 35rem;
+    font-size: 18px;
+    font-family: Lato;
 }
 
 #about-me-inspirations1 {
-    position: absolute;
-    font-size: 33px;
-    font-family: Rubik;
+    position: relative;
+    transform: translate(6rem, -1rem);
     font-weight: bold;
-    transform: translate(52rem, -8rem);
+    font-size: 30px;
+    font-family: Grandstander;
 }
 
-#about-me-inspirations2 {
-    position: absolute;
-    font-size: 33px;
-    font-family: Rubik;
+#about-me-collaborations-title {
+    position: relative;
+    font-size: 26px;
     font-weight: bold;
-    right: -5%;
-    top: 50%;
-    transform: rotate(90deg);
+    font-family: 'Grandstander';
+    transform: translate(5rem, 16rem);
+}
+
+#about-me-collaborations {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    width: 87.9rem;
+    height: 80rem;
+    transform: translate(4.2rem, 19rem);
+}
+
+#about-me-miss-starling {
+    position: relative;
+    width: 87.9rem;
+    height: 36rem;
+    border: 4px solid black;
+}
+
+#about-me-miss-starling-photo {
+    position: relative;
+    width: auto;
+    height: 26rem;
+    transform: translate(6rem, 5rem);
+}
+
+#about-me-miss-starling-text {
+    position: relative;
+    transform: translate(32rem, -17rem);
+    width: 30rem;
+    font-size: 24px;
+}
+
+#about-me-miss-starling-text h2 {
+    font-family: 'Grandstander';
+    font-size: 43px;
+}
+
+#about-me-miss-starling-text p {
+    font-size: 30px;
+    width: 45rem;
+    font-family: Lato;
+}
+
+.about-me-button-listen-now {
+    background-color: transparent;
+    border-radius: 50px;
+    width: 12rem;
+    height: 3rem;
+    font-size: 18px;
+    font-family: 'Grandstander';
+    font-weight: bold;
+    transform: translate(0rem, 3.5rem);
+    cursor: pointer;
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.about-me-button-listen-now:hover {
+    opacity: 50%;
+}
+
+#about-me-alberto-ammendolia {
+    position: relative;
+    width: 87.9rem;
+    height: 36rem;
+    border: 4px solid black;
+}
+
+#about-me-alberto-photo {
+    position: relative;
+    width: auto;
+    height: 26rem;
+    transform: translate(60rem, 5rem);
+}
+
+#about-me-alberto-ammendolia-text {
+    position: relative;
+    transform: translate(32rem, -17rem);
+    width: 30rem;
+    font-size: 24px;
+}
+
+#about-me-alberto-ammendolia-text h2 {
+    font-family: Grandstander;
+    font-size: 43px;
+}
+
+#about-me-alberto-ammendolia-text p {
+    font-size: 30px;
+    width: 45rem;
+    font-family: Lato;
+    text-align: right;
+    transform: translate(-18.5rem, 0rem);
+}
+
+#about-me-alberto-ammendolia-text button {
+    transform: translate(15rem, 4rem);
 }
 
 
