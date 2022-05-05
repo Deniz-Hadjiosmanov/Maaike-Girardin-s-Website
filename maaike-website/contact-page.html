@@ -20,10 +20,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Home</title>
+    <title>Contact Me</title>
 </head>
 
-<body class="body-home">
+<body class="body-contact">
     <header>
         <div class="container-menu">
             <div class="box-menu-logo">
@@ -34,7 +34,7 @@
                     <li><a href="about-me.html">About me</a></li>
                     <li><a href="#">Listen now</a></li>
                     <li><a href="#">Events</a></li>
-                    <li><a href="contact-page.html">Contact me</a></li>
+                    <li><a href="#">Contact me</a></li>
                 </ul>
             </div>
             <div class="box-menu-language">
@@ -87,38 +87,58 @@
         </div>
     </header>
 
-    <div class="home-container-body">
-        <div class="home-box-body-tree">
-            <video id="myVid" width="400" height="400" muted>
-                <source src="images/blooming.mp4">
-            </video>
+    <div class="contact-container-body">
+        <div class="contact-box-picture-Maaike">
+            <img src="images/Maaike_contact_me.jpg" alt="Maaike Girardin">
         </div>
-        <div class="home-box-body-photo">
-            <img src="images/Maaike_home.jpg" alt="Maaike">
-            <p id="name-first">Maaike</p>
-            <p id="name-second">Girardin</p>
-        </div>
-        <div class="home-box-body-song">
-            <iframe width="360" height="240" src="https://www.youtube.com/embed/3RmwLlVeOdc"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <br>
-            <p id="box-body-song-text">NEW SONG OUT NOW</p>
+        <div class="contact-box-contact-me">
+            <h1 id="contact-heading">Contact me</h1>
+            <div class="contact-form">
+                <form>
+                    <div class="field">
+                        <input type="text" id="name" required>
+                        <label for="name">Full Name</label>
+                        <span class="border"></span>
+                    </div>
+                    <div class="field">
+                        <input type="email" id="email" required>
+                        <label for="email">E-mail</label>
+                        <span class="border"></span>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="message" required>
+                        <label for="message">Message</label>
+                        <span class="border"></span>
+                    </div>
+                    <button type="submit">Contact me</button>
+                </form>
+                <div class="contact-info-form">
+                    <div id="contact-info-Maaike">
+                        <div id="contact-info-email">
+                            <h1>Contact</h1>
+                            <p>info@maaikegirardin.com</p>
+                        </div>
+                        <div id="contact-info-location">
+                            <h1>Based in</h1>
+                        <p>Tilburg, Netherlands</p>
+                        </div>
+                    </div>
+                    <div id="contact-socials">
+                        <a href="https://soundcloud.com/maaikegirardin" target="_blank"><img
+                                src="images/soundcloud-brands.svg"></a>
+                        <a href="https://www.instagram.com/maaikegirardinmusic/" target="_blank"><img
+                                src="images/instagram-brands.svg"></a>
+                        <a href="https://www.facebook.com/maaikegirardinmusic" target="_blank"><img
+                                src="images/facebook-brands.svg"></a>
+                        <a href="https://open.spotify.com/user/1130327144" target="_blank"><img
+                                src="images/spotify-brands.svg" target="_blank"></a>
+                        <a href="https://www.youtube.com/channel/UCGYdNWNWy2jfU6xD6JN6xig" target="_blank"><img
+                                src="images/youtube-brands.svg"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        <a href="https://soundcloud.com/maaikegirardin" target="_blank"><img src="images/soundcloud-brands.svg"></a>
-        <a href="https://www.instagram.com/maaikegirardinmusic/" target="_blank"><img
-                src="images/instagram-brands.svg"></a>
-        <a href="https://www.facebook.com/maaikegirardinmusic" target="_blank"><img
-                src="images/facebook-brands.svg"></a>
-        <a href="https://open.spotify.com/user/1130327144" target="_blank"><img src="images/spotify-brands.svg"
-                target="_blank"></a>
-        <a href="https://www.youtube.com/channel/UCGYdNWNWy2jfU6xD6JN6xig" target="_blank"><img
-                src="images/youtube-brands.svg"></a>
-    </footer>
+
     <script src="script.js"></script>
 </body>
-
-</html>
