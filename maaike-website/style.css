@@ -901,3 +901,39 @@ p:nth-last-child(2) {
 #contact-info-Maaike p {
     font-family: 'Lato', cursive;
 }
+
+/* confirmation of the email*/
+
+.sent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sent #contact-socials {
+    flex-direction: row;
+    width: auto;
+    margin-inline: auto;
+}
+
+.sent h1 {
+    margin-block: 1rem;
+    font-family: 'Grandstander', cursive;
+    text-transform: uppercase;
+}
+
+#thank-you-page-message {
+    margin-bottom: 2rem;
+}
+
+#thank-you-page-message p {
+    font-size: 1.3rem;
+    font-family: 'Lato', cursive;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+}
+
+#sent-logo {
+    width: 4rem;
+}
