@@ -691,6 +691,62 @@ footer img:hover {
     transform: translate(15rem, 4rem);
 }
 
+/*events page*/
+#events-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#events-descriptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+p:nth-last-child(4) {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+p:nth-last-child(2) {
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+}
+
+#events-animal-event {
+    flex: 1;
+    margin-top: -2rem;
+}
+
+#events-hertog-jan1 {
+    flex: 1;
+}
+
+#events-hertog-jan2 {
+    flex: 1;
+}
+
+#events-hertog-jan3 {
+    flex: 1;
+}
+
+.events-text {
+    width: 21rem;
+}
+
+.events-events-pictures {
+    width: auto;
+    height: 12rem;
+}
+
+#events-animal-event-picture {}
+
 
 /*contact page*/
 .body-contact {
@@ -854,6 +910,6 @@ footer img:hover {
     font-size: 1.7rem;
 }
 
-#contact-info-Maaike p{
+#contact-info-Maaike p {
     font-family: 'Lato', cursive;
 }
