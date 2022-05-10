@@ -696,6 +696,7 @@ footer img:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 4rem;
 }
 
 #events-descriptions {
@@ -719,20 +720,7 @@ p:nth-last-child(2) {
     display: flex;
 }
 
-#events-animal-event {
-    flex: 1;
-    margin-top: -2rem;
-}
-
-#events-hertog-jan1 {
-    flex: 1;
-}
-
-#events-hertog-jan2 {
-    flex: 1;
-}
-
-#events-hertog-jan3 {
+#events-content-box {
     flex: 1;
 }
 
