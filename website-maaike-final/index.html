@@ -25,18 +25,56 @@
 
 <body class="body-english">
     <header>
-    <nav>
-        <ul class="desktop-menu">
-            <li><a>Home</a></li>
-            <li><a>About me</a></li>
-            <li><a>Listen now</a></li>
-            <li><a><img src=""></a></li>
-            <li><a>Events</a></li>
-            <li><a>Contact me</a></li>
-            <li><a><img src=""></a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="desktop-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#listen-now">Listen now</a></li>
+                <li class="nav-logo"><a href="#home"><img src="images/logo.png"></a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact-me">Contact me</a></li>
+                <div class="dropdown">
+                    <li class="nav-language"><a><img src="images/language.png"></a></li>
+                    <div class="dropdown-content">
+                        <a href="">EN</a>
+                        <a href="">NL</a>
+                        <a href="">IT</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
     </header>
+
+    <section id="home">
+        <div class="video-heading">
+            <h2>Hi, I am</h2>
+            <h1>Maaike Girardin</h1>
+        </div>
+
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="about-me">
+
+    </section>
+
+    <section id="listen-now">
+
+    </section>
+
+    <section id="events">
+
+    </section>
+
+    <section id="contact-me">
+
+    </section>
+
+    <footer></footer>
 
     <script src="script.js"></script>
 </body>
