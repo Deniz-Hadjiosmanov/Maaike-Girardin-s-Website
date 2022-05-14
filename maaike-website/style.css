@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #efeee7;
+    background-color: #F2E8CF  ;
 }
 
 .body-home {
@@ -113,7 +113,7 @@ body {
     flex: 1;
     font-family: 'Lobster Two', cursive;
     font-weight: 600;
-    background-color: #efeee7;
+    background-color: #F2E8CF ;
 }
 
 .home-box-body-photo img {
@@ -130,7 +130,7 @@ body {
 
 #name-first {
     position: relative;
-    background-color: #efeee7;
+    background-color: #F2E8CF ;
     width: 33%;
     font-size: 3.1rem;
     transform: translateY(-12rem);
@@ -138,7 +138,7 @@ body {
 
 #name-second {
     position: relative;
-    background-color: #efeee7;
+    background-color: #F2E8CF ;
     width: 36%;
     font-size: 3.1rem;
     transform: translateY(-11rem);
@@ -169,7 +169,7 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: #efeee7;
+    background-color: #F2E8CF ;
     padding-bottom: 1.8rem;
     text-align: center;
 }
@@ -205,7 +205,7 @@ footer img:hover {
 .responsive-menu {
     display: none;
     position: fixed;
-    background: #efeee7;
+    background: #F2E8CF ;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -347,7 +347,7 @@ footer img:hover {
         width: 100%;
         position: relative;
         bottom: 7px;
-        background-color: #efeee7;
+        background-color: #F2E8CF  ;
         ;
         padding-bottom: 0.5rem;
         text-align: center;
@@ -869,7 +869,7 @@ p:nth-last-child(2) {
 #contact-socials {
     display: inline-block;
     width: 100%;
-    background-color: #efeee7;
+    background-color: #F2E8CF  ;
     padding-bottom: 1.8rem;
     margin-left: 3rem;
 }
