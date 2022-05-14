@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --colornav: #C3D67C;
+}
+
+header {
+    background-color: var(--colornav);
+    height: 9vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 4vh;
+}
