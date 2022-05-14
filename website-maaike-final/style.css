@@ -11,8 +11,12 @@ html {
     --color-green: #C3D67C;
     --color-black: #020000;
     --color-white: #F1F1F1;
+    --font-logo: 'Lobster Two', cursive;
+    --font-headings: 'Grandstander', cursive;
+    --font-text: 'Lato', cursive;
 }
 
+/* HEADER */
 header {
     position: fixed;
     background-color: var(--color-green);
@@ -24,12 +28,18 @@ header {
     width: 100%;
 }
 
+.bgColor{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    transition: all 1s ease;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    font-family: 'Grandstander', cursive;
+    font-family: var(--font-headings);
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -37,7 +47,7 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     padding: 0 1.5rem;
-    transition: transform .4s ease;
+    transition: transform .5s ease;
 }
 
 header nav ul li a {
@@ -45,12 +55,12 @@ header nav ul li a {
     color: var(--color-black);
 }
 
-.desktop-menu .nav-logo img{
+.desktop-menu .nav-logo img {
     width: 14vw;
     height: auto;
 }
 
-.desktop-menu .nav-language img{
+.desktop-menu .nav-language img {
     width: 2.1vw;
     height: auto;
 }
@@ -60,6 +70,40 @@ header nav ul li:hover {
     transform: scale(1.1);
 }
 
+.drop-down-language {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-down-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-green);
+    min-width: 5vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: .2rem;
+}
+
+.drop-down-content a {
+    color: black;
+    padding: 0.7rem 0rem;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.drop-down-content a:hover {
+    background-color: var(--color-white);
+    transition: all .5s ease;
+    border-radius: .2rem;
+}
+
+.drop-down-language:hover .drop-down-content {
+    display: block;
+}
+
+/* HOME PAGE */
 #home {
     position: relative;
     height: 100vh;
@@ -75,71 +119,64 @@ header nav ul li:hover {
     display: inline-block;
     text-align: center;
     color: var(--color-white);
-    font-family: 'Grandstander', cursive;
+    font-family: var(--font-headings);
     z-index: 1;
     font-size: 1.5rem;
 }
-
 #home .video-heading h1{
-    font-family: 'Lobster Two', cursive;
-    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+#home .video-heading h2{
+    font-family: var(--font-logo);
+    font-size: 3.8rem;
+    font-weight: 600;
 }
 
 #home .video-container {
     position: absolute;
-    display: flex; 
+    display: flex;
     justify-content: center;
     opacity: 0.6;
 }
 
+#home-socials {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#home-socials img {
+    width:1.8vw;
+    padding: 0 0.5rem;
+}
+
+
+/* ABOUT ME PAGE */
 #about-me {
     position: relative;
     background-color: var(--color-black);
     height: 100vh;
 }
 
+/* LISTEN NOW PAGE */
 #listen-now {
     position: relative;
     background-color: var(--color-green);
     height: 100vh;
 }
 
+/* EVENTS PAGE */
 #events {
     position: relative;
     background-color: red;
     height: 100vh;
 }
 
+/* CONTACT ME PAGE */
 #contact-me {
     position: relative;
     background-color: var(--color-green);
     height: 100vh;
 }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--color-green);
-    min-width: 5vw;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 0.7rem 0rem;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-  }
-  
-  .dropdown-content a:hover {background-color: var(--color-white);}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
