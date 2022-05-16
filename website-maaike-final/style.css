@@ -175,8 +175,118 @@ header nav ul li:hover {
 
 /* CONTACT ME PAGE */
 #contact-me {
+    overflow-x: hidden;
     position: relative;
     background-color: var(--color-green);
     height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-me-tree {
+    flex: 1;
+}
+
+.contact-me-tree video {
+    width: 35vw;
+    height: auto;
+}
+
+.contact-me-form {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-right: 5rem ;
+}
+
+.contact-me-info {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.contact-me-form form {
+    width: 50%;
+    height: 100%;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.contact-me-form input {
+    height: 30px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-bottom: .5px solid black;
+    background-color: transparent;
+    transition: 1s ease all;
+    font-size: 1rem;
+}
+
+.field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    transform: scale(0);
+    transform-origin: left;
+    height: 3px;
+    background-color: #5c7a19;
+    transition: .4s ease-in-out all;
+}
+
+.contact-me-form label {
+    font-family: 'Grandstander', cursive;
+    font-weight: 500;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 10px;
+    transition: .5s ease all;
+}
+
+.contact-me-form input:focus {
+    outline: 0;
+}
+
+.contact-me-form button {
+    font-family: 'Grandstander', cursive;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: .8rem;
+    width: 13rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    line-height: 1.5rem;
+}
+
+.contact-me-form label.top {
+    transform: translateY(-30px);
+}
+
+.contact-header {
+    font-family: 'Grandstander', cursive;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.contact-text {
+    font-family: 'Lato', cursive;
+    margin-bottom: 2rem;
 }
 
