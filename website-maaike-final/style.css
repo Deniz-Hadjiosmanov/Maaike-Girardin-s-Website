@@ -28,7 +28,7 @@ header {
     width: 100%;
 }
 
-.bgColor{
+.bgColor {
     background-color: var(--color-black);
     color: var(--color-white);
     transition: all 1s ease;
@@ -123,11 +123,12 @@ header nav ul li:hover {
     z-index: 1;
     font-size: 1.5rem;
 }
-#home .video-heading h1{
+
+#home .video-heading h1 {
     font-weight: 500;
 }
 
-#home .video-heading h2{
+#home .video-heading h2 {
     font-family: var(--font-logo);
     font-size: 3.8rem;
     font-weight: 600;
@@ -147,7 +148,7 @@ header nav ul li:hover {
 }
 
 #home-socials img {
-    width:1.8vw;
+    width: 1.8vw;
     padding: 0 0.5rem;
 }
 
@@ -157,6 +158,48 @@ header nav ul li:hover {
     position: relative;
     background-color: var(--color-black);
     height: 100vh;
+}
+
+#about-me-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#maaike-picture img {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+
+#maaike-text {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#maaike-text p {
+    color: white;
+    font-size: 22px;
+    font-family: var(--font-text);
+    text-align: center;
+    width: 35vw;
+}
+
+#maaike-text h1 {
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 6vh;
+    font-size: 36px;
+    font-family: var(--font-headings);
+}
+
+pederast {
+    color: var(--color-green);
 }
 
 /* LISTEN NOW PAGE */
@@ -169,8 +212,43 @@ header nav ul li:hover {
 /* EVENTS PAGE */
 #events {
     position: relative;
-    background-color: red;
     height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/maaike-alberto-events.PNG);
+    background-size: cover;
+}
+
+#events-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#events-container h1 {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26vh;
+    margin-bottom: 26vh;
+    font-family: var(--font-text);
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#events-container p {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-text);
+    color: white;
+    font-size: 30px;
+    font-weight: 530;
+    padding-bottom: 15px;
+}
+
+kopele {
+    color: #C3D67C;
 }
 
 /* CONTACT ME PAGE */
@@ -197,7 +275,7 @@ header nav ul li:hover {
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-right: 5rem ;
+    margin-right: 5rem;
 }
 
 .contact-me-info {
@@ -289,4 +367,3 @@ header nav ul li:hover {
     font-family: 'Lato', cursive;
     margin-bottom: 2rem;
 }
-
