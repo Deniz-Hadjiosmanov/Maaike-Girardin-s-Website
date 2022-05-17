@@ -155,22 +155,20 @@ header nav ul li:hover {
 
 /* ABOUT ME PAGE */
 #about-me {
+    overflow: hidden;
     position: relative;
     background-color: var(--color-black);
     height: 100vh;
-}
-
-#about-me-container {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #maaike-picture img {
     flex: 1;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 100vh;
+    width: 41vw;
+    height: auto;
+    margin-top: 5rem;
 }
 
 #maaike-text {
@@ -178,27 +176,27 @@ header nav ul li:hover {
     flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 #maaike-text p {
-    color: white;
-    font-size: 22px;
+    color: var(--color-white);
+    font-size: 1.3rem;
     font-family: var(--font-text);
     text-align: center;
-    width: 35vw;
+    width: 40vw;
 }
 
 #maaike-text h1 {
     align-items: center;
     justify-content: center;
-    color: white;
-    margin-bottom: 6vh;
-    font-size: 36px;
+    color: var(--color-white);
+    margin-bottom: 1.8rem;
+    font-size: 3rem;
     font-family: var(--font-headings);
+    font-weight: 500;
 }
 
-pederast {
+c {
     color: var(--color-green);
 }
 
@@ -213,45 +211,33 @@ pederast {
 #events {
     position: relative;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/maaike-alberto-events.PNG);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 8, 8, .7)), url(images/maaike-alberto-events.PNG);
     background-size: cover;
-}
-
-#events-container {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #events-container h1 {
-    flex: 1;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 26vh;
-    margin-bottom: 26vh;
-    font-family: var(--font-text);
-    color: white;
-    font-size: 50px;
-    font-weight: 400;
+    margin-bottom: 15rem;
+    font-family: var(--font-headings);
+    color: var(--color-white);
+    font-size: 3rem;
+    font-weight: 500;
+
 }
 
 #events-container p {
-    flex: 1;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     font-family: var(--font-text);
-    color: white;
-    font-size: 30px;
+    color: var(--color-white);
+    font-size: 1.7rem;
     font-weight: 530;
     padding-bottom: 15px;
 }
 
-kopele {
-    color: #C3D67C;
-}
 
-/* CONTACT ME PAGE */
 #contact-me {
     overflow-x: hidden;
     position: relative;
@@ -275,7 +261,7 @@ kopele {
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-right: 5rem;
+    margin-right: 5rem ;
 }
 
 .contact-me-info {
@@ -290,16 +276,16 @@ kopele {
 .contact-me-form form {
     width: 50%;
     height: 100%;
-    padding: 30px 30px;
+    padding: 2rem 2rem;
     text-align: center;
 }
 
 .contact-me-form input {
-    height: 30px;
+    height: 2rem;
     width: 100%;
     border: none;
-    padding: 10px;
-    border-bottom: .5px solid black;
+    padding: .7rem;
+    border-bottom: .5px solid var(--color-black);
     background-color: transparent;
     transition: 1s ease all;
     font-size: 1rem;
@@ -310,7 +296,7 @@ kopele {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 35px 0;
+    margin: 2.5rem 0;
 }
 
 .border {
@@ -321,17 +307,17 @@ kopele {
     margin: 0;
     transform: scale(0);
     transform-origin: left;
-    height: 3px;
+    height: .2rem;
     background-color: #5c7a19;
     transition: .4s ease-in-out all;
 }
 
 .contact-me-form label {
-    font-family: 'Grandstander', cursive;
+    font-family: var(--font-headings);
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     position: absolute;
-    left: 10px;
+    left: .5rem;
     transition: .5s ease all;
 }
 
@@ -340,7 +326,7 @@ kopele {
 }
 
 .contact-me-form button {
-    font-family: 'Grandstander', cursive;
+    font-family: var(--font-headings);
     font-size: 1.3rem;
     font-weight: 700;
     padding: .8rem;
@@ -348,22 +334,22 @@ kopele {
     height: 3rem;
     border-radius: 3rem;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     cursor: pointer;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
 }
 
 .contact-me-form label.top {
-    transform: translateY(-30px);
+    transform: translateY(-1.6rem);
 }
 
 .contact-header {
-    font-family: 'Grandstander', cursive;
+    font-family: var(--font-headings);
     font-weight: 600;
     font-size: 1.7rem;
 }
 
 .contact-text {
-    font-family: 'Lato', cursive;
+    font-family: var(--font-text);
     margin-bottom: 2rem;
 }
