@@ -193,7 +193,7 @@ header nav ul li:hover {
     margin-bottom: 1.8rem;
     font-size: 3rem;
     font-family: var(--font-headings);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 c {
@@ -225,7 +225,7 @@ c {
     font-family: var(--font-headings);
     color: var(--color-white);
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 400;
 
 }
 
@@ -235,6 +235,7 @@ c {
     font-size: 1.7rem;
     font-weight: 530;
     padding-bottom: 15px;
+    font-weight: 600;
 }
 
 
