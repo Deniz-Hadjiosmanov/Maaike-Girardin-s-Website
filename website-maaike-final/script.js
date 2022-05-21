@@ -25,6 +25,3 @@ for (let i = 0; i < fields.length; i++) {
 document.getElementById("myVid").addEventListener("mouseover", function () {
 	this.play();
 });
-
-
-
