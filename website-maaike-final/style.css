@@ -103,6 +103,130 @@ header nav ul li:hover {
     display: block;
 }
 
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+
+  /*HOME PAGE*/
+
+  #home-socials img {
+        width: 50px;
+        height: 50px;
+      padding: 0 2rem;
+  }
+
+  #home .video-heading h1{
+    font-size: 1.5rem;
+  }
+
+  #home .video-heading h2{
+    font-size: 3.5rem;
+  }
+
+  #home .video-container {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      opacity: 0.6;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+  }
+
+  /*ABOUT ME*/
+
+
+
+/* EVENTS PAGE */
+#events {
+    position: relative;
+    height: 500px;
+    background-image: url(images/maaike-alberto-events.PNG;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 8, 8, .7));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CONTACT ME */
+.contact-me-tree {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 775px) {
+
+  /*HOME PAGE*/
+
+  #home-socials img {
+      font-size: 1.25em;
+      padding: 0 0.5rem;
+  }
+
+
+  #home .video-container {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      opacity: 0.6;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+  }
+
+
+/* ABOUT ME PAGE */
+
+#about-me {
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color-black);
+    height: 160vh;
+    display: block;
+
+}
+
+#maaike-picture img{
+  float: left;
+  width: 35vw;
+  height: 32vw;
+  padding: 0 10px 0 0;
+}
+
+#maaike-text {
+    text-align: justify;
+
+
+}
+
+
+  /* CONTACT ME */
+  .contact-me-tree {
+      display: none;
+  }
+
+  .contact-me-form {
+      align-items: center;
+      display: block;
+      margin: 5rem 0 0 10rem;
+      /*transform: translateX(10rem);*/
+  }
+
+  .contact-me-info {
+    display: block;
+      height: 10rem;
+      justify-content: space-evenly;
+      margin: 0;
+    transform: translate(-19rem, 23rem);
+  }
+
+
+
+}
+
+
 /* HOME PAGE */
 #home {
     position: relative;
