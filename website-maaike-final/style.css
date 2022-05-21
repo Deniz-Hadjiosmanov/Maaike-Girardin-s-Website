@@ -139,7 +139,7 @@ header nav ul li:hover {
 #events {
     position: relative;
     height: 500px;
-    background-image: url(images/maaike-alberto-events.PNG;
+    background-image: url('images/maaike-alberto-events.PNG');
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 8, 8, .7));
     background-size: cover;
     background-position: center;
@@ -478,9 +478,8 @@ c {
     font-family: var(--font-text);
     margin-bottom: 2rem;
 }
+
 /*----------------Responsive-----------*/
-
-
 #hamburger-menu {
     margin: auto 0;
     display: none;
@@ -809,9 +808,4 @@ c {
         width: 7vw;
        
     }
-  
-
- 
-
-
 }

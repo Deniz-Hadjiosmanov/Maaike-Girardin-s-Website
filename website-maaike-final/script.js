@@ -25,8 +25,6 @@ for (let i = 0; i < fields.length; i++) {
 document.getElementById("myVid").addEventListener("mouseover", function () {
 	this.play();
 });
-<<<<<<< HEAD
-=======
   
 
   /*----Hamburger Menu-----*/
@@ -39,4 +37,3 @@ function submitForm() {
 }
 
 
->>>>>>> 1392e218ab142614d2823e764332fcc295665766
