@@ -103,129 +103,6 @@ header nav ul li:hover {
     display: block;
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 800px) {
-
-  /*HOME PAGE*/
-
-  #home-socials img {
-        width: 50px;
-        height: 50px;
-      padding: 0 2rem;
-  }
-
-  #home .video-heading h1{
-    font-size: 1.5rem;
-  }
-
-  #home .video-heading h2{
-    font-size: 3.5rem;
-  }
-
-  #home .video-container {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      opacity: 0.6;
-      top: 50%;
-      left: 40%;
-      transform: translate(-50%, -50%);
-  }
-
-  /*ABOUT ME*/
-
-
-
-/* EVENTS PAGE */
-#events {
-    position: relative;
-    height: 500px;
-    background-image: url('images/maaike-alberto-events.PNG');
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 8, 8, .7));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* CONTACT ME */
-.contact-me-tree {
-    display: none;
-}
-}
-
-@media only screen and (max-width: 775px) {
-
-  /*HOME PAGE*/
-
-  #home-socials img {
-      font-size: 1.25em;
-      padding: 0 0.5rem;
-  }
-
-
-  #home .video-container {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      opacity: 0.6;
-      top: 50%;
-      left: 25%;
-      transform: translate(-50%, -50%);
-  }
-
-
-/* ABOUT ME PAGE */
-
-#about-me {
-    overflow: hidden;
-    position: relative;
-    background-color: var(--color-black);
-    height: 160vh;
-    display: block;
-
-}
-
-#maaike-picture img{
-  float: left;
-  width: 35vw;
-  height: 32vw;
-  padding: 0 10px 0 0;
-}
-
-#maaike-text {
-    text-align: justify;
-
-
-}
-
-
-  /* CONTACT ME */
-  .contact-me-tree {
-      display: none;
-  }
-
-  .contact-me-form {
-      align-items: center;
-      display: block;
-      margin: 5rem 0 0 10rem;
-      /*transform: translateX(10rem);*/
-  }
-
-  .contact-me-info {
-    display: block;
-      height: 10rem;
-      justify-content: space-evenly;
-      margin: 0;
-    transform: translate(-19rem, 23rem);
-  }
-
-
-
-}
-
 
 /* HOME PAGE */
 #home {
@@ -335,7 +212,7 @@ c {
 #events {
     position: relative;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 8, 8, .7)), url(images/maaike-alberto-events.PNG);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 8, 8, .7)), url('images/maaike-alberto-events.PNG');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -362,7 +239,11 @@ c {
     font-weight: 600;
 }
 
+#events-container p a {
+    text-decoration: none;
+}
 
+/* CONTACT ME PAGE */
 #contact-me {
     overflow-x: hidden;
     position: relative;
@@ -377,7 +258,7 @@ c {
 }
 
 .contact-me-tree video {
-    width: 30vw;
+    width: 32vw;
     height: auto;
 }
 
@@ -386,7 +267,7 @@ c {
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-right: 5rem ;
+    margin-right: 5rem;
 }
 
 .contact-me-info {
@@ -479,7 +360,168 @@ c {
     margin-bottom: 2rem;
 }
 
-/*----------------Responsive-----------*/
+/* EVENTS FUTURE PAGE */
+#events-future {
+    position: absolute;
+    z-index: -3;
+    background-color: var(--color-green);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#events-future h1 {
+    font-size: 3rem;
+    font-family: var(--font-headings);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.event-list {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 13vw;
+    height: 30vh;
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #89a431;
+    box-shadow: rgba(26, 59, 31, 0.6) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: .2rem;
+}
+
+.container-box #flower {
+    width: auto;
+    position: absolute;
+    height: 3rem;
+    margin-top: calc(-30vh - 2.5rem);
+}
+
+.container-box #stem {
+    position: absolute;
+    height: 35vh;
+    margin-top: calc(30vh + 30vh);
+    z-index: -2;
+}
+
+.container-box p {
+    margin-block: .2rem;
+}
+
+
+.container-box:nth-of-type(2n+1) {
+    margin-top: 8rem;
+    background-color: #98b633;
+}
+
+.name-event {
+    font-size: 1.4rem;
+    font-family: var(--font-headings);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.place-event,
+.month-event,
+.date-event {
+    font-family: var(--font-text);
+    font-weight: 500;
+}
+
+.place-event {
+    font-size: 1.2rem;
+}
+
+.month-event {
+    font-size: 1.1rem;
+}
+
+.date-event {
+    font-size: 3.8rem;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-black);
+    padding-block: 1rem;
+}
+
+footer img {
+    width: 1.8vw;
+    padding: 0 0.75rem;
+}
+
+/* RESPONSIVE CODE */
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+
+    /*HOME PAGE*/
+    #home-socials img {
+        width: 50px;
+        height: 50px;
+        padding: 0 2rem;
+    }
+
+    #home .video-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    #home .video-heading h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+
+    /*HOME PAGE*/
+    #home-socials img {
+        font-size: 1.25em;
+        padding: 0 0.5rem;
+    }
+
+    #maaike-text {
+        text-align: justify;
+    }
+
+    /* CONTACT ME */
+    .contact-me-tree {
+        display: none;
+    }
+
+    .contact-me-form {
+        align-items: center;
+        display: block;
+        margin: 5rem 0 0 10rem;
+        /*transform: translateX(10rem);*/
+    }
+
+    .contact-me-info {
+        display: block;
+        height: 10rem;
+        justify-content: space-evenly;
+        margin: 0;
+        transform: translate(-19rem, 23rem);
+    }
+}
+
 #hamburger-menu {
     margin: auto 0;
     display: none;
@@ -497,30 +539,6 @@ c {
     display: block;
 }
 
-.responsive-menu {
-    display: none;
-    position: fixed;
-    background: #F2E8CF ;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: 0px;
-    text-align: left;
-    z-index: 1;
-    transition: 1s;
-    padding-top: 90px;
-}
-
-.responsive-menu li {
-    padding-bottom: 25px;
-}
-
-.responsive-menu a {
-    color: black;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: right;
-}
 
 .responsive-menu #exit {
     text-align: right;
@@ -559,11 +577,10 @@ c {
     justify-content: flex-start;
     z-index: -1;
 }
-.logo img{
+
+.logo img {
     display: none;
 }
-
-
 
 @media only screen and (max-width: 1200px) {
     .body-home {
@@ -572,14 +589,17 @@ c {
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
     }
-    .nav-logo a{
+
+    .nav-logo a {
         display: block;
     }
-    #home-socials img{
+
+    #home-socials img {
         width: 5vw;
-       
+
     }
 }
+
 @media only screen and (max-width: 760px) {
 
     #hamburger-menu .box-menu-language {
@@ -596,12 +616,14 @@ c {
         z-index: 2;
         display: block;
     }
+
     .body-home {
         height: 100%;
         width: 100%;
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
     }
+
     .responsive-menu li a {
         position: relative;
         text-decoration: none;
@@ -613,17 +635,20 @@ c {
         text-align: right;
         list-style: none;
     }
+
     #hamburger-menu {
         display: block;
         margin-right: 5%;
     }
 
 }
+
 #hamburger-menu {
-	margin: auto 0;
-	display: none;
-	cursor: pointer;
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
 }
+
 #hamburger-menu div {
     width: 35px;
     height: 3px;
@@ -638,71 +663,77 @@ c {
 }
 
 .open .line1 {
-	-webkit-transform: rotate(-45deg) translate(-6px, 6px);
-	transform: rotate(-45deg) translate(-6px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .open .line2 {
-	opacity: 0;
+    opacity: 0;
 }
 
 .open .line3 {
-	-webkit-transform: rotate(45deg) translate(-6px, -8px);
-	transform: rotate(45deg) translate(-6px, -8px);
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
 }
 
 .open .responsive-menu {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .responsive-menu {
-	display: none;
-	position: absolute;
-	background: #C3D67C;
-	height: 100vh;
-	width: 200px;
-	top: 0;
-	right: 0px;
-	/* to hide the menu */
-	text-align: left;
-	z-index: 1;
-	transition: 1s;
+    display: none;
+    position: absolute;
+    background: #C3D67C;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0px;
+    /* to hide the menu */
+    text-align: left;
+    z-index: 1;
+    transition: 1s;
 }
 
 .responsive-menu li {
-	padding-bottom: 25px;
+    padding-bottom: 25px;
 }
 
 .responsive-menu a {
-	color: black;
-	font-weight: 600;
-	text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
 }
+
 @media only screen and (max-width: 700px) {
-    .nav-logo li img{
-       width: 1vw;
+    .nav-logo li img {
+        width: 1vw;
 
     }
-    .vertical-line{
+
+    .vertical-line {
         background-color: #C3D67C;
     }
-	header nav {
-		display: none;
-	}
-    .nav-logo{
-    display: block;
-    }
-	#hamburger-menu {
-		display: block;
-	}
 
-	.text-box h1 {
-		font-size: 20px;
-	}
+    header nav {
+        display: none;
+    }
+
+    .nav-logo {
+        display: block;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+
+    .text-box h1 {
+        font-size: 20px;
+    }
+
     #hamburger-menu .box-menu-language {
         visibility: visible;
         display: flex;
@@ -719,26 +750,31 @@ c {
         border: none;
         cursor: pointer;
     }
-    .logo img{
+
+    .logo img {
         width: 26vh;
-    position: relative;
-    top: 1vh;
-    left: 2vw;
-    display: block;
+        position: relative;
+        top: 1vh;
+        left: 2vw;
+        display: block;
     }
+
     .web-navigation {
         display: none;
     }
-    #home-socials img{
+
+    #home-socials img {
         width: 7vw;
-       
+
     }
 }
+
 @media only screen and (max-width: 700px) {
-    .header nav ul li a img{
+    .header nav ul li a img {
         display: block;
         z-index: 1;
     }
+
     .box-menu-navigation {
         display: none;
     }
@@ -746,12 +782,14 @@ c {
     .box-menu-language {
         visibility: hidden;
     }
+
     #hamburger-menu .box-menu-language {
         visibility: visible;
         display: flex;
         flex: 0;
         margin-top: 40px;
     }
+
     .lines {
         position: absolute;
         top: 2.5rem;
@@ -759,19 +797,23 @@ c {
         z-index: 2;
         display: block;
     }
+
     .body-home {
         height: 100%;
         width: 100%;
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
     }
+
     .box-menu-navigation {
         display: none;
     }
+
     ul {
         list-style: none;
 
     }
+
     .responsive-menu li a {
         position: relative;
         text-decoration: none;
@@ -783,6 +825,7 @@ c {
         text-align: right;
         list-style: none;
     }
+
     .home-box-body-tree {
         display: none;
     }
@@ -793,10 +836,14 @@ c {
 
     #hamburger-menu {
         display: block;
-       margin-right: -89%;
-      
-    }  
-    .lines, .line1, .line2, .line3 {
+        margin-right: -89%;
+
+    }
+
+    .lines,
+    .line1,
+    .line2,
+    .line3 {
         width: 35px;
         height: 3px;
         margin: 6px 0;
@@ -804,8 +851,9 @@ c {
         display: block;
         z-index: 1;
     }
-    #home-socials img{
+
+    #home-socials img {
         width: 7vw;
-       
+
     }
 }
