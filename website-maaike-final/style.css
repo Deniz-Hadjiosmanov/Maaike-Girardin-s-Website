@@ -239,7 +239,7 @@ c {
     font-weight: 600;
 }
 
-#events-container p a {
+#events-container a{
     text-decoration: none;
 }
 
@@ -361,7 +361,7 @@ c {
 }
 
 /* EVENTS FUTURE PAGE */
-#events-future {
+#events-details{
     position: absolute;
     z-index: -3;
     background-color: var(--color-green);
@@ -374,7 +374,7 @@ c {
     overflow: hidden;
 }
 
-#events-future h1 {
+#events-details h1 {
     font-size: 3rem;
     font-family: var(--font-headings);
     font-weight: 400;
