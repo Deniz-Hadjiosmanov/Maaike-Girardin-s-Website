@@ -167,9 +167,9 @@ header nav ul li:hover {
 
 #maaike-picture img {
     flex: 1;
-    width: 41vw;
+    width: 40vw;
     height: auto;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 #maaike-text {
