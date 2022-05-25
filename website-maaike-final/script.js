@@ -1,10 +1,10 @@
-/* Contact me form input interaction */
+// Contact me form input interaction
 let fields = document.querySelectorAll('.field');
 
 const form = document.getElementById('contact-form');
 form.addEventListener("submit", () => {
-		form.submit();
-		alert("Thank you for your interest in my work! Your email was sent.");
+	form.submit();
+	alert("Thank you for your interest in my work! Your email was sent.");
 
 })
 
@@ -21,20 +21,34 @@ for (let i = 0; i < fields.length; i++) {
 	});
 }
 
-/* Tree video play on hover */
+// Tree video play on hover
 document.getElementById("myVid").addEventListener("mouseover", function () {
 	this.play();
 });
-  
 
-  /*----Hamburger Menu-----*/
+
+// Hamburger Menu
 function openMobileMenu(menu) {
-    menu.classList.toggle('open');
+	menu.classList.toggle('open');
 }
 
 function submitForm() {
-    window.location.reload();
+	window.location.reload();
 }
 
 
 
+// Scroll to top button
+mybutton = document.querySelector(".button-scroll");
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+	if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
+}
+function topFunction() {
+	document.body.scrollTop = 0; // this is for safari
+	document.documentElement.scrollTop = 0; // this is for everything with chromium and firefox
+}

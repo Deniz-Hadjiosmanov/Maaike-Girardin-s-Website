@@ -15,7 +15,25 @@ html {
     --font-headings: 'Grandstander', cursive;
     --font-text: 'Lato', cursive;
 }
+.button-scroll {
+    display: none;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 99;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
 
+.button-scroll img {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.button-scroll img:hover {
+    background-color: var(--color-white);
+}
 /* HEADER */
 header {
     position: fixed;
