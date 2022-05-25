@@ -44,6 +44,10 @@ window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
 	if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
 		mybutton.style.display = "block";
+		mybutton.style.bottom = "1.5rem";
+		if((document.body.scrollTop > 2820 || document.documentElement.scrollTop > 2820)) {
+			mybutton.style.bottom = "4.5rem";
+		}
 	} else {
 		mybutton.style.display = "none";
 	}
