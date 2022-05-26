@@ -22,10 +22,10 @@ header {
     background-color: var(--color-green);
     height: 11vh;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     z-index: 3;
     width: 100%;
+    justify-content: center;
 }
 
 .bgColor {
@@ -436,7 +436,7 @@ c {
     justify-content: flex-start;
     z-index: -1;
 }
-.logo img{
+.Logo {
     display: none;
 }
 
@@ -456,46 +456,9 @@ c {
         width: 5vw;
        
     }
+   
 }
-@media only screen and (max-width: 760px) {
 
-    #hamburger-menu .box-menu-language {
-        visibility: visible;
-        display: flex;
-        flex: 0;
-        margin-top: 40px;
-    }
-
-    .lines {
-        position: absolute;
-        top: 2.5rem;
-        right: 1.5rem;
-        z-index: 2;
-        display: block;
-    }
-    .body-home {
-        height: 100%;
-        width: 100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
-    .responsive-menu li a {
-        position: relative;
-        text-decoration: none;
-        color: black;
-        font-family: 'Grandstander', cursive;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 1rem;
-        text-align: right;
-        list-style: none;
-    }
-    #hamburger-menu {
-        display: block;
-        margin-right: 5%;
-    }
-
-}
 #hamburger-menu {
 	margin: auto 0;
 	display: none;
@@ -560,6 +523,9 @@ c {
 	text-decoration: none;
 }
 @media only screen and (max-width: 700px) {
+    .Logo{
+        display: block;
+    }
     .nav-logo li img{
        width: 1vw;
 
@@ -570,9 +536,6 @@ c {
 	header nav {
 		display: none;
 	}
-    .nav-logo{
-    display: block;
-    }
 	#hamburger-menu {
 		display: block;
 	}
@@ -596,13 +559,7 @@ c {
         border: none;
         cursor: pointer;
     }
-    .logo img{
-        width: 26vh;
-    position: relative;
-    top: 1vh;
-    left: 2vw;
-    display: block;
-    }
+    
     .web-navigation {
         display: none;
     }
@@ -610,8 +567,6 @@ c {
         width: 7vw;
        
     }
-}
-@media only screen and (max-width: 700px) {
     .header nav ul li a img{
         display: block;
         z-index: 1;
@@ -619,7 +574,6 @@ c {
     .box-menu-navigation {
         display: none;
     }
-
     .box-menu-language {
         visibility: hidden;
     }
@@ -670,7 +624,7 @@ c {
 
     #hamburger-menu {
         display: block;
-       margin-right: -89%;
+       margin-right: -59%;
       
     }  
     .lines, .line1, .line2, .line3 {
@@ -685,9 +639,36 @@ c {
         width: 7vw;
        
     }
+      a .lang-button {
+        font-family: 'Grandstander', cursive;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+    }
+    .Logo img{
+        width: 42vw;
+        height: auto;
+        display: block;
+    }
   
+   .logo-hamMenu{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-around;
+   }
 
- 
-
-
+   .lang-buttons {
+       display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+   }
+   .lang-buttons a{
+       margin: 1vw;
+   }
 }
