@@ -810,14 +810,26 @@ footer img {
 
     .contact-me-info{
       display: block;
-      transform: translate(-270px, 170px);
+      transform: translate(-65vw, 50vw);
     }
 
     #contact-form{
       display: block;
-      transform: translateY(-150px);
-      margin-left: clamp(70px, 80px, 110px);
+      transform: translateY(-28vw);
+      margin-left: clamp(10vw, 15vw, 30vw);
     }
+
+    #maaike-text {
+      margin-top: 20vh;
+      text-align: center;
+      font-size:  1.1rem;
+      padding-top: 0;
+    }
+
+    #maaike-picture img{
+      display: none;
+    }
+
   }
 
 @media only screen and (max-width: 760px) {
@@ -830,15 +842,18 @@ footer img {
 #maaike-picture{
   width: 100%;
   height: 5vw;
-  transform: translate(150px, 400px);
+  transform: translate(30vw, 50vw);
   display: block;
-
+margin-top: 0;
 }
 
 #maaike-text p{
   width: 75%;
   text-align: center;
+  font-size:  1.1rem;
 }
+
+
 /*ABOUT ME*/
 
     .header nav ul li a img {
