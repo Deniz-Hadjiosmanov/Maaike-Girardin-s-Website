@@ -229,7 +229,7 @@ c {
     border-radius: 50%;
     position: absolute;
     z-index: 2;
-    background-image: url("media/images/vinyl-tecture.jpg");
+    background-image: url("images/vinyl-tecture.jpg");
     background-position: center;
     -webkit-mask-image: radial-gradient(10px at 50% 50% , transparent 95%, black 100%);
 }
@@ -248,7 +248,7 @@ c {
 }
 
 #vinyl-holder {
-    background-image: url("media/images/vinyl-player.png");
+    background-image: url("images/vinyl-player.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
