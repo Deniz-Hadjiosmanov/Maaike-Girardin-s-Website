@@ -8,12 +8,19 @@ html {
 }
 
 :root {
+    /* Color variables */
     --color-green: #C3D67C;
     --color-black: #020000;
     --color-white: #F1F1F1;
     --font-logo: 'Lobster Two', cursive;
     --font-headings: 'Grandstander', cursive;
     --font-text: 'Lato', cursive;
+    --vinyl-color : #141414;
+    --green-color: #C3D67C;
+
+    /* Size variables */
+    --plate-size: 23vw;
+    --holder-size: 20vw;
 }
 
 /* HEADER */
@@ -206,7 +213,112 @@ c {
     position: relative;
     background-color: var(--color-green);
     height: 100vh;
+    overflow: hidden;
+    background-color: var(--green-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.record-plate {
+    width: calc(var(--holder-size) - 5px);
+    height: calc(var(--holder-size) - 5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    background-image: url("images/vinyl-tecture.jpg");
+    background-position: center;
+    -webkit-mask-image: radial-gradient(10px at 50% 50% , transparent 95%, black 100%);
+}
+
+.record-plate img {
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+}
+
+#plate-2 {
+    left: 3vw;
+}
+#plate-1 {
+    right: 3vw;
+}
+
+#vinyl-holder {
+    background-image: url("images/vinyl-player.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 42vw;
+    height: 25vw;
+    float: right;
+    margin-right: 1.5rem;
+    overflow-y: hidden;
+    margin-top: 20vh;
+}
+
+.plate-spot {
+    position: absolute;
+    width: 20vw;
+    left: 8vw;
+    top: 2vw;
+}
+
+.needle {
+    position: absolute;
+    height: 65%;
+    right: 9.4vw;
+    transform-origin: top right;
+    top: 4.2vw;
+    z-index: 3;
+}
+
+.on-vinyl {
+    animation: move-needle 1s forwards;
+}
+
+.playing {
+    animation: rotating 10s linear infinite;
+}
+
+
+@keyframes move-needle {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -webkit-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      transform: rotate(30deg);
+    }
+  }
+
+@keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
 
 /* EVENTS PAGE */
 #events {
