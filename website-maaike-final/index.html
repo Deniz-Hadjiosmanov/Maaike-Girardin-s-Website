@@ -36,15 +36,18 @@
                 <div class="drop-down-language">
                     <li class="nav-language"><a><img src="images/language.png"></a></li>
                     <div class="drop-down-content">
-                        <a href="">EN</a>
-                        <a href="">NL</a>
-                        <a href="">IT</a>
+                        <a href="index.html">EN</a>
+                        <a href="index-nl.html">NL</a>
+                        <a href="index-it.html">IT</a>
                     </div>
                 </div>
             </ul>
         </nav>
 
+<<<<<<< HEAD
        <div class="logo-hamMenu">
+=======
+>>>>>>> d79ab41d557f517b2e95ebdf669411bf2961a61b
         <div id="hamburger-menu" onclick="openMobileMenu(this)">
            
             <div class="line1"></div>
@@ -76,9 +79,12 @@
             </ul>
             
         </div>
+<<<<<<< HEAD
         <li class="Logo"><a href="#home"><img src="images/logo.png"></a></li>
         </div> 
     </div>
+=======
+>>>>>>> d79ab41d557f517b2e95ebdf669411bf2961a61b
     </header>
 
     <!-- HOME PAGE -->
@@ -119,7 +125,7 @@
                 <c>broken hearts</c>, so that you remain
                 moved by her music. You can also
                 hear many <c>influences</c> from her
-                performances and <c>travels abroad</c>. 
+                performances and <c>travels abroad</c>.
                 In recent years she has <c>traveled</c> and
                 played on stages in Netherlands,
                 Canada, Belgium, Italy, Israel, Chile,
@@ -137,17 +143,31 @@
 
     <!-- LISTEN NOW PAGE -->
     <section id="listen-now">
-
+        <div class="record-plate" id="plate-1">
+            <img src="images/vinyl-cover-photo-two.png" alt="">
+        </div>
+        <div class="record-plate" id="plate-2">
+            <img src="images/vinyl-cover-photo.png" alt="">
+        </div> 
+        
+        <div id="vinyl-holder">
+            <img class="needle" src="images/needle.png"/>
+            <img class="plate-spot" src="images/vinyl-plate.png">
+        </div>
     </section>
 
     <!-- EVENTS PAGE -->
     <section id="events">
         <div id="events-container">
             <h1>EVENTS</h1>
-            <p>Past events</p>
-            <p>
-                <c>FUTURE APPEARANCES</c>
-            </p>
+            <a href="events-past.html">
+                <p>Past events</p>
+            </a>
+            <a href="events-future.html">
+                <p>
+                    <c>FUTURE APPEARANCES</c>
+                </p>
+            </a>
         </div>
     </section>
 
@@ -155,7 +175,7 @@
     <section id="contact-me">
         <div class="contact-me-tree">
             <video id="myVid" muted>
-                <source src="images/blooming.mp4">
+                <source src="images/blooming.webm" type="video/mp4">
             </video>
         </div>
         <div class="contact-me-form">
@@ -187,11 +207,18 @@
                 <p class="contact-text">Tilburg, Netherlands</p>
             </div>
         </div>
+        <button onclick="topFunction()" class="button-scroll"><img src="images/scroll-to-top.png" alt=""></button>
+        <!-- FOOTER -->
+        <footer>
+            <a href="https://www.youtube.com/channel/UCGYdNWNWy2jfU6xD6JN6xig" target="_blank"><img
+                    src="images/youtube.svg"></a>
+            <a href="https://www.instagram.com/maaikegirardinmusic/" target="_blank"><img
+                    src="images/instagram.svg"></a>
+            <a href="https://open.spotify.com/user/1130327144" target="_blank"><img src="images/spotify.svg"
+                    target="_blank"></a>
+            <a href="https://soundcloud.com/maaikegirardin" target="_blank"><img src="images/soundcloud.svg"></a>
+        </footer>
     </section>
-
-    <!-- FOOTER -->
-    <footer></footer>
-
     <script src="script.js"></script>
 </body>
 

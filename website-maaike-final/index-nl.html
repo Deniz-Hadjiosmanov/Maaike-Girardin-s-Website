@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Thuis</title>
+</head>
+
+<body class="body-english">
+    <header>
+        <nav>
+            <ul class="desktop-menu">
+                <li><a href="#home">Thuis</a></li>
+                <li><a href="#about-me">Over mij</a></li>
+                <li><a href="#listen-now">Luister nu</a></li>
+                <li class="nav-logo"><a href="#home"><img src="images/logo.png"></a></li>
+                <li><a href="#events">Evenementen</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+                <div class="drop-down-language">
+                    <li class="nav-language"><a><img src="images/language.png"></a></li>
+                    <div class="drop-down-content">
+                        <a href="index.html">EN</a>
+                        <a href="index-nl.html">NL</a>
+                        <a href="index-it.html">IT</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+
+        <div id="hamburger-menu" onclick="openMobileMenu(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <ul class="responsive-menu">
+                <br>
+                <br>
+                <li><a href="">Over mij</a></li>
+                <li><a id="about-us" href="about me">Luister nu</a></li>
+                <li><a id="idea" href="#inspo">Evenementen</a></li>
+                <li><a href="">Contact</a></li>
+                <div class="box-menu-language" id="mobile-language-menu">
+                    <!-- english version -->
+                    <a href="index.html">
+                        <button class="lang-button">EN</button>
+                    </a>
+                    <div class="vertical-line"><b>|</b></div>
+                    <!-- dutch version -->
+                    <a href="index-nl.html">
+                        <button class="lang-button">NL</button>
+                    </a>
+                    <div class="vertical-line"><b>|</b></div>
+                    <!-- italian version -->
+                    <a href="index-it.html">
+                        <button class="lang-button">IT</button>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <section id="home">
+        <div class="video-heading">
+            <h1>Hoi, ik ben</h1>
+            <h2>Maaike Girardin</h2>
+            <div id="home-socials">
+                <a href="https://www.youtube.com/channel/UCGYdNWNWy2jfU6xD6JN6xig" target="_blank"><img
+                        src="images/youtube.svg"></a>
+                <a href="https://www.instagram.com/maaikegirardinmusic/" target="_blank"><img
+                        src="images/instagram.svg"></a>
+                <a href="https://open.spotify.com/user/1130327144" target="_blank"><img src="images/spotify.svg"
+                        target="_blank"></a>
+                <a href="https://soundcloud.com/maaikegirardin" target="_blank"><img src="images/soundcloud.svg"></a>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- ABOUT ME PAGE -->
+    <section id="about-me">
+        <div id="maaike-picture">
+            <img src="images/maaike-alberto-about-me.png">
+        </div>
+        <div id="maaike-text">
+            <h1>OVER MIJ</h1>
+            <p>Maaike is een Nederlands-Canadese <c>singersongwriter</c>, die alles heeft gereisd
+                over de wereld. Maaike zingt, speelt
+                de gitaar. Haar muziek heeft vaak een
+                <c>vrouwelijke toon</c>, maar zit vol met haar
+                <c>verborgen gedachten</c>, bekentenissen en
+                <c>gebroken harten</c>, zodat je blijft
+                geraakt door haar muziek. Je kan ook
+                hoor veel <c>invloeden</c> van haar
+                optredens en <c>reizen naar het buitenland</c>.
+                In de afgelopen jaren heeft ze <c>gereisd</c> en
+                gespeeld op podia in Nederland,
+                Canada, België, Italië, Israël, Chili,
+                Brazilië, Bolivia, Vietnam, Thailand
+                en Australië, waar ze heeft
+                <c>samengewerkt</c> met veel <c>muzikanten</c>
+                waaronder <c>Siciliaanse</c> folk
+                muzikanten, een Zweedse jazzgitarist,
+                een beatboxer en een <c>flamenco</c>
+                gitarist.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- LISTEN NOW PAGE -->
+    <section id="listen-now">
+
+    </section>
+
+    <!-- EVENTS PAGE -->
+    <section id="events">
+        <div id="events-container">
+            <h1>EVENEMENTEN</h1>
+            <a href="events-past-nl.html">
+                 <p>Gebeurtenissen uit het verleden</p>
+            </a>
+            <a href="events-future-nl.html">
+                <p><c>TOEKOMSTIGE OPTREDENS</c></p>
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT ME PAGE -->
+    <section id="contact-me">
+        <div class="contact-me-tree">
+            <video id="myVid" muted>
+                <source src="images/blooming.webm" type="video/mp4">
+            </video>
+        </div>
+        <div class="contact-me-form">
+            <form id="contact-form" action="https://formsubmit.co/n.v.d.nikoleta@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://i477363.hera.fhict.nl/website-maaike-final/#contact-me">
+                <input type="hidden" name="_subject" value="New email">
+                <div class="field">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Voor-en achternaam</label>
+                    <span class="border"></span>
+                </div>
+                <div class="field">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">E-mail</label>
+                    <span class="border"></span>
+                </div>
+                <div class="field">
+                    <input type="text" id="message" name="message" required>
+                    <label for="message">Bericht</label>
+                    <span class="border"></span>
+                </div>
+                <button type="submit">Contact</button>
+            </form>
+            <div class="contact-me-info">
+
+                <p class="contact-header">Contact</p>
+                <p class="contact-text">info@maaikegirardin.com</p>
+                <p class="contact-header">Gevestigd in</p>
+                <p class="contact-text">Tilburg, Nederland</p>
+
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            <a href="https://www.youtube.com/channel/UCGYdNWNWy2jfU6xD6JN6xig" target="_blank"><img
+                    src="images/youtube.svg"></a>
+            <a href="https://www.instagram.com/maaikegirardinmusic/" target="_blank"><img
+                    src="images/instagram.svg"></a>
+            <a href="https://open.spotify.com/user/1130327144" target="_blank"><img src="images/spotify.svg"
+                    target="_blank"></a>
+            <a href="https://soundcloud.com/maaikegirardin" target="_blank"><img src="images/soundcloud.svg"></a>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
