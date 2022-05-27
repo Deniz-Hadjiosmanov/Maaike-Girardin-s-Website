@@ -529,7 +529,7 @@ c {
   width: auto;
   position: absolute;
   height: 1.9rem;
-  margin-top: calc(-30vh - 1.5rem);
+  margin-top: calc(-30vh - 2.5rem);
 }
 
 .container-box #stem {
