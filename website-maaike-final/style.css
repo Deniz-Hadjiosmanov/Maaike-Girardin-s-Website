@@ -209,13 +209,19 @@ c {
 /* LISTEN NOW PAGE */
 #listen-now {
   position: relative;
-  background-color: var(--color-green);
   height: 100vh;
-  overflow: hidden;
   background-color: var(--green-color);
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+}
+
+.plate-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 .record-plate {
@@ -224,16 +230,24 @@ c {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   position: absolute;
+  border-radius: 50%;
   z-index: 2;
   background-image: url("images/vinyl-tecture.jpg");
   background-position: center;
+  overflow: hidden;
+  left: 7.5rem;
+  top: 10rem;
   -webkit-mask-image: radial-gradient(
     10px at 50% 50%,
     transparent 95%,
     black 100%
   );
+}
+
+.record-plate:nth-child(2) {
+  top: calc(var(--holder-size) - 5px);
+  left: calc(10rem + (var(--holder-size) - 5px));
 }
 
 .record-plate img {
@@ -242,41 +256,32 @@ c {
   height: 8vw;
 }
 
-#plate-2 {
-  left: 3vw;
-}
-#plate-1 {
-  right: 3vw;
-}
-
 #vinyl-holder {
   background-image: url("images/vinyl-player.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  width: 42vw;
+  width: 35vw;
   height: 25vw;
-  float: right;
-  margin-right: 1.5rem;
-  overflow-y: hidden;
-  margin-top: 20vh;
+  margin-right: 7.5rem;
 }
 
-.plate-spot {
+#plate-spot {
   position: absolute;
   width: 20vw;
-  left: 8vw;
-  top: 2vw;
+  left: 6vw;
+  top: 2.5vw;
+  border-radius: 50%;
 }
 
 .needle {
   position: absolute;
   height: 65%;
-  right: 9.4vw;
+  right: 6vw;
   transform-origin: top right;
-  top: 4.2vw;
-  z-index: 3;
+  top: 4.5vw;
+  z-index: 1;
 }
 
 .on-vinyl {
@@ -284,7 +289,18 @@ c {
 }
 
 .playing {
-  animation: rotating 10s linear infinite;
+  animation: rotating 10s linear infinite, on-player .1s forwards;
+}
+/* .fixed-on-player {
+  animation: on-player .1s forwards;
+} */
+
+@keyframes on-player {
+  to {
+    left: unset;
+    right: calc(7.65rem + 9vw);
+    top: calc(50% - 10vw + .15rem);
+  }
 }
 
 @keyframes move-needle {
@@ -298,7 +314,7 @@ c {
   to {
     -ms-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
-    -ebkit-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
     -o-transform: rotate(30deg);
     transform: rotate(30deg);
   }
