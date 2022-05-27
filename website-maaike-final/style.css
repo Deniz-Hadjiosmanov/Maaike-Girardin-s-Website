@@ -501,56 +501,21 @@ c {
   justify-content: center;
 }
 
-/*removing the event text in order to show other text
-------------------------------------------------------*/
-.container-box p.name-event {
-  display: inline;
-}
+.view-event {display: none;}
+.container-box:hover > p {display: none;}
+.container-box:hover > .view-event {display: block;}
 
-.container-box:hover p.name-event {
-  display: none;
-}
-.container-box p.view-event {
-  display: none;
-}
-
-.container-box:hover p.view-event {
-  display: inline;
-}
-.container-box p.place-event {
-  display: inline;
-}
-
-.container-box:hover p.place-event {
-  display: none;
-}
-.container-box p.month-event {
-  display: inline;
-}
-
-.container-box:hover p.month-event {
-  display: none;
-}
-.container-box p.date-event {
-  display: inline;
-}
-
-.container-box:hover p.date-event {
-  display: none;
-}
-/* ------------------------------------------*/
-.container-box:not(:hover) {
-  transition: 0.3s;
-}
 .container-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  color: var(--color-black);
+  text-decoration: none;
   width: 13vw;
   height: 30vh;
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: .5rem;
   text-align: center;
   margin-top: 3rem;
   background-color: #89a431;
@@ -564,7 +529,7 @@ c {
   width: auto;
   position: absolute;
   height: 1.9rem;
-  margin-top: calc(-30vh - 2.5rem);
+  margin-top: calc(-30vh - 1.5rem);
 }
 
 .container-box #stem {
@@ -583,14 +548,7 @@ c {
   background-color: #98b633;
 }
 
-.view-event {
-  font-size: 2.5rem;
-  font-family: var(--font-headings);
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.name-event {
+.name-event, .view-event {
   font-size: 1.4rem;
   font-family: var(--font-headings);
   font-weight: 600;
