@@ -501,9 +501,15 @@ c {
   justify-content: center;
 }
 
-.view-event {display: none;}
-.container-box:hover > p {display: none;}
-.container-box:hover > .view-event {display: block;}
+.view-event {
+  display: none;
+}
+.container-box:hover > p {
+  display: none;
+}
+.container-box:hover > .view-event {
+  display: block;
+}
 
 .container-box {
   display: flex;
@@ -515,7 +521,7 @@ c {
   width: 13vw;
   height: 30vh;
   margin: 0.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
   margin-top: 3rem;
   background-color: #89a431;
@@ -548,7 +554,8 @@ c {
   background-color: #98b633;
 }
 
-.name-event, .view-event {
+.name-event,
+.view-event {
   font-size: 1.4rem;
   font-family: var(--font-headings);
   font-weight: 600;
