@@ -675,7 +675,7 @@ footer img {
 
 .responsive-menu #exit {
     text-align: right;
-    color: black;
+    color: var(--color-black);
     position: relative;
     top: -2%;
     left: -7%;
@@ -735,7 +735,7 @@ footer img {
     #home-socials img {
         width: 5vw;
     }
-   
+
 }
 
 
@@ -768,8 +768,8 @@ footer img {
     .responsive-menu li a {
         position: relative;
         text-decoration: none;
-        color: black;
-        font-family: 'Grandstander', cursive;
+        color: var(--color-black);
+        font-family: var(--font-headings);
         font-weight: 600;
         text-transform: uppercase;
         font-size: 1rem;
@@ -781,11 +781,6 @@ footer img {
         display: block;
         margin-right: 5%;
     }
-
-    /* CONTACT ME */
-.contact-me-tree {
-    display: none;
-}
 
 }
 
@@ -800,7 +795,7 @@ footer img {
     width: 35px;
     height: 3px;
     margin: 6px 0;
-    background-color: black;
+    background-color: var(--color-black);
     transition: 0.4s;
     display: flex;
     flex-direction: column;
@@ -834,7 +829,7 @@ footer img {
 .responsive-menu {
     display: none;
     position: absolute;
-    background: #C3D67C;
+    background: var(--color-green);
     height: 100vh;
     width: 200px;
     top: 0;
@@ -850,42 +845,30 @@ footer img {
 }
 
 .responsive-menu a {
-    color: black;
+    color: var(--color-black);
     font-weight: 600;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 700px) {
-    .Logo{
-        display: block;
-    }
-    .nav-logo li img{
-       width: 1vw;
-    }
 
 @media only screen and (max-width: 760px) {
 
-  
+  .Logo{
+      display: block;
+  }
+  .nav-logo li img{
+     width: 1vw;
+  }
+
   .contact-me-tree {
   display: none;
   }
 
-    .nav-logo li img {
-        width: 1vw;
-
-
-    }
 
     .vertical-line {
         background-color: #C3D67C;
     }
 
-	header nav {
-		display: none;
-	}
-	#hamburger-menu {
-		display: block;
-	}
     header nav {
         display: none;
     }
@@ -911,7 +894,7 @@ footer img {
     }
 
     .languages .lang-button {
-        font-family: 'Grandstander', cursive;
+        font-family: var(--font-headings);
         font-weight: 600;
         text-transform: uppercase;
         font-size: 1.2rem;
@@ -936,8 +919,6 @@ footer img {
         width: 7vw;
 
     }
-
-    
 }
 @media only screen and (max-width: 550px) {
 
@@ -948,7 +929,7 @@ footer img {
 
     .contact-me-info{
       display: block;
-      transform: translate(-65vw, 50vw);
+      transform: translate(-50vw, 40vw);
     }
 
     #contact-form{
@@ -957,6 +938,7 @@ footer img {
       margin-left: clamp(10vw, 15vw, 30vw);
     }
 
+/*ABOUT ME*/
     #maaike-text {
       margin-top: 20vh;
       text-align: center;
@@ -990,9 +972,6 @@ margin-top: 0;
   text-align: center;
   font-size:  1.1rem;
 }
-
-
-
 
     .header nav ul li a img {
         display: block;
@@ -1040,8 +1019,8 @@ margin-top: 0;
     .responsive-menu li a {
         position: relative;
         text-decoration: none;
-        color: black;
-        font-family: 'Grandstander', cursive;
+        color: var(--color-black);
+        font-family: var(--font-headings);
         font-weight: 600;
         text-transform: uppercase;
         font-size: 1rem;
@@ -1058,8 +1037,8 @@ margin-top: 0;
         display: block;
 
        margin-right: -59%;
-      
-    }  
+
+    }
     .lines, .line1, .line2, .line3 {
 
         margin-right: -89%;
@@ -1084,7 +1063,7 @@ margin-top: 0;
     }
 
       a .lang-button {
-        font-family: 'Grandstander', cursive;
+        font-family: var(--font-headings);
         font-weight: 600;
         text-transform: uppercase;
         font-size: 1.2rem;
@@ -1098,7 +1077,7 @@ margin-top: 0;
         height: auto;
         display: block;
     }
-  
+
    .logo-hamMenu{
     display: flex;
     flex-direction: row-reverse;
@@ -1131,5 +1110,4 @@ margin-top: 0;
         margin-top: 0.3rem;
         padding: 0 0.5rem;
     }
-}
 }
