@@ -207,15 +207,30 @@ c {
 }
 
 /* LISTEN NOW PAGE */
+
+.songs-heading h1{
+  display: none;
+}
+.songs{
+  display: none;
+}
+
+
 #listen-now {
   position: relative;
-  background-color: var(--color-green);
   height: 100vh;
-  overflow: hidden;
   background-color: var(--green-color);
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+}
+
+.plate-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 .record-plate {
@@ -224,16 +239,24 @@ c {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   position: absolute;
+  border-radius: 50%;
   z-index: 2;
   background-image: url("images/vinyl-tecture.jpg");
   background-position: center;
+  overflow: hidden;
+  left: 7.5rem;
+  top: 10rem;
   -webkit-mask-image: radial-gradient(
     10px at 50% 50%,
     transparent 95%,
     black 100%
   );
+}
+
+.record-plate:nth-child(2) {
+  top: calc(var(--holder-size) - 5px);
+  left: calc(10rem + (var(--holder-size) - 5px));
 }
 
 .record-plate img {
@@ -242,41 +265,32 @@ c {
   height: 8vw;
 }
 
-#plate-2 {
-  left: 3vw;
-}
-#plate-1 {
-  right: 3vw;
-}
-
 #vinyl-holder {
   background-image: url("images/vinyl-player.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  width: 42vw;
+  width: 35vw;
   height: 25vw;
-  float: right;
-  margin-right: 1.5rem;
-  overflow-y: hidden;
-  margin-top: 20vh;
+  margin-right: 7.5rem;
 }
 
-.plate-spot {
+#plate-spot {
   position: absolute;
   width: 20vw;
-  left: 8vw;
-  top: 2vw;
+  left: 6vw;
+  top: 2.5vw;
+  border-radius: 50%;
 }
 
 .needle {
   position: absolute;
   height: 65%;
-  right: 9.4vw;
+  right: 6vw;
   transform-origin: top right;
-  top: 4.2vw;
-  z-index: 3;
+  top: 4.5vw;
+  z-index: 1;
 }
 
 .on-vinyl {
@@ -284,7 +298,18 @@ c {
 }
 
 .playing {
-  animation: rotating 10s linear infinite;
+  animation: rotating 10s linear infinite, on-player .1s forwards;
+}
+/* .fixed-on-player {
+  animation: on-player .1s forwards;
+} */
+
+@keyframes on-player {
+  to {
+    left: unset;
+    right: calc(7.65rem + 9vw);
+    top: calc(50% - 10vw + .15rem);
+  }
 }
 
 @keyframes move-needle {
@@ -298,7 +323,7 @@ c {
   to {
     -ms-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
-    -ebkit-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
     -o-transform: rotate(30deg);
     transform: rotate(30deg);
   }
@@ -342,13 +367,6 @@ c {
     color: var(--color-white);
     font-size: 3rem;
     font-weight: 400;
-
-  margin-bottom: 15rem;
-  font-family: var(--font-headings);
-  color: var(--color-white);
-  font-size: 3rem;
-  font-weight: 400;
-
 }
 
 #events-container p {
@@ -509,9 +527,15 @@ c {
   justify-content: center;
 }
 
-.view-event {display: none;}
-.container-box:hover > p {display: none;}
-.container-box:hover > .view-event {display: block;}
+.view-event {
+  display: none;
+}
+.container-box:hover > p {
+  display: none;
+}
+.container-box:hover > .view-event {
+  display: block;
+}
 
 .container-box {
   display: flex;
@@ -523,7 +547,7 @@ c {
   width: 13vw;
   height: 30vh;
   margin: 0.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
   margin-top: 3rem;
   background-color: #89a431;
@@ -556,7 +580,8 @@ c {
   background-color: #98b633;
 }
 
-.name-event, .view-event {
+.name-event,
+.view-event {
   font-size: 1.4rem;
   font-family: var(--font-headings);
   font-weight: 600;
@@ -627,13 +652,20 @@ footer img {
   /*HEADER*/
   header nav ul li {
     display: inline-block;
-    font-size: 2vh;
+    font-size: 1vh;
   }
   .nav-logo img {
     width: clamp(14vw, 15vw, 16vw);
     height: 5vw;
   }
+  .desktop-menu li{
+      font-size: 2vw;
+  }
 
+  .desktop-menu .nav-language img {
+    width: 3.1vw;
+    height: auto;
+  }
   /*HOME PAGE*/
   #home-socials img {
     width: 5vw;
@@ -646,6 +678,41 @@ footer img {
   #home .video-heading h2 {
     font-size: 3.5rem;
   }
+
+    /*LISTEN NOW*/
+
+    .record-plate,
+    #vinyl-holder
+    {
+      display: none;
+    }
+
+
+
+    .songs h1{
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+      font-family: var(--font-headings);
+      color: var(--color-white);
+      font-size: 3rem;
+      font-weight: 400;
+
+    }
+
+    .songs {
+        flex: 1;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
+        bottom: 1.4rem;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
 
   /* CONTACT ME */
   .contact-me-tree {
@@ -668,6 +735,10 @@ footer img {
     margin-top: 0.3rem;
     padding: 0 0.5rem;
   }
+
+
+
+
 }
 
 #hamburger-menu {
@@ -836,7 +907,7 @@ footer img {
 .responsive-menu {
     display: none;
     position: absolute;
-    background: #C3D67C;
+    background: var(--color-green);
     height: 100vh;
     width: 200px;
     top: 0;
@@ -852,7 +923,7 @@ footer img {
 }
 
 .responsive-menu a {
-    color: black;
+    color: var(--color-black);
     font-weight: 600;
     text-decoration: none;
 }
@@ -884,10 +955,18 @@ footer img {
     .nav-logo li img{
        width: 1vw;
     }
+    .desktop-menu li{
+        font-size: 2vw;
+    }
 }
 
 
 @media only screen and (max-width: 760px) {
+
+  .desktop-menu li{
+          font-size: 2vw;
+      }
+
     #hamburger-menu .box-menu-language {
       visibility: visible;
       display: flex;
@@ -911,19 +990,15 @@ footer img {
     }
 
     #hamburger-menu {
-      display: block;
-      margin-right: 5%;
-    }
+     display: block;
+     margin-right: 5%;
+   }
 
     /* CONTACT ME */
     .contact-me-tree {
       display: none;
     }
 
-  /* CONTACT ME */
-  .contact-me-tree {
-    display: none;
-  }
 
   .nav-logo li img {
     width: 1vw;
@@ -958,19 +1033,13 @@ footer img {
   }
 
   .languages .lang-button {
-    font-family: "Grandstander", cursive;
+    font-family: var(--font-headings);
     font-weight: 600;
     text-transform: uppercase;
     font-size: 1.2rem;
     background: none;
     border: none;
     cursor: pointer;
-  }
-
-
-
-  .web-navigation {
-    display: none;
   }
 
   #home-socials img {
@@ -1033,10 +1102,6 @@ footer img {
     -webkit-overflow-scrolling: touch;
   }
 
-  .box-menu-navigation {
-    display: none;
-  }
-
   ul {
     list-style: none;
   }
@@ -1044,8 +1109,8 @@ footer img {
   .responsive-menu li a {
     position: relative;
     text-decoration: none;
-    color: black;
-    font-family: "Grandstander", cursive;
+    color: var(--color-black);
+    font-family: var(--font-headings);
     font-weight: 600;
     text-transform: uppercase;
     font-size: 1rem;
@@ -1097,31 +1162,6 @@ footer img {
    .Logo {
        display: block;
    }
-    #hamburger-menu .box-menu-language {
-        visibility: visible;
-        display: flex;
-        flex: 0;
-        margin-top: 40px;
-    }
-
-    .body-home {
-        height: 100%;
-        width: 100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .responsive-menu li a {
-        position: relative;
-        text-decoration: none;
-        color: black;
-        font-family: 'Grandstander', cursive;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 1rem;
-        text-align: right;
-        list-style: none;
-    }
 
     #hamburger-menu {
         display: block;
@@ -1199,8 +1239,8 @@ margin-top: 0;
     .responsive-menu li a {
         position: relative;
         text-decoration: none;
-        color: black;
-        font-family: 'Grandstander', cursive;
+        color: var(--color-black);
+        font-family: var(--font-headings);
         font-weight: 600;
         text-transform: uppercase;
         font-size: 1rem;
@@ -1243,7 +1283,7 @@ margin-top: 0;
     }
 
       a .lang-button {
-        font-family: 'Grandstander', cursive;
+        font-family: var(--font-headings);
         font-weight: 600;
         text-transform: uppercase;
         font-size: 1.2rem;
@@ -1274,6 +1314,36 @@ margin-top: 0;
    .lang-buttons a{
        margin: 1vw;
    }
+
+/*LISTEN NOW*/
+.record-plate,
+#vinyl-holder
+{
+  display: none;
+}
+
+
+.songs h1{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  font-family: var(--font-headings);
+  color: var(--color-white);
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: justify;
+}
+.songs {
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    margin:12rem 1rem 12rem 7rem;
+    bottom: 1.4rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
     footer {
         display: inline-block;
         width: 100%;
@@ -1284,13 +1354,6 @@ margin-top: 0;
         bottom: 0;
         left: 0;
     }
-
-    footer img {
-        width: 4%;
-        margin-top: 0.3rem;
-        padding: 0 0.5rem;
-    }
-
 
   footer img {
     width: 4%;
