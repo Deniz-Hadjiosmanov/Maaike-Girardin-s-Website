@@ -421,7 +421,6 @@ c {
 .contact-me-form form {
   width: 50%;
   height: 100%;
-  padding: 2rem 2rem;
   text-align: center;
 }
 
@@ -687,17 +686,15 @@ footer img {
       display: none;
     }
 
-
-
     .songs h1{
       align-items: center;
       justify-content: center;
       margin-bottom: 2.5rem;
       font-family: var(--font-headings);
-      color: var(--color-white);
+      color: var(--color-black);
       font-size: 3rem;
       font-weight: 400;
-
+      text-transform: uppercase;
     }
 
     .songs {
@@ -717,6 +714,10 @@ footer img {
   /* CONTACT ME */
   .contact-me-tree {
     display: none;
+  }
+
+  #contact-form{
+    margin-left: 3rem;
   }
 
   footer {
@@ -1163,10 +1164,6 @@ footer img {
        display: block;
    }
 
-    #hamburger-menu {
-        display: block;
-        margin-right: 5%;
-    }
 
     /* CONTACT ME */
 .contact-me-tree {
@@ -1298,12 +1295,6 @@ margin-top: 0;
         display: block;
     }
 
-   .logo-hamMenu{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    justify-content: space-around;
-   }
 
    .lang-buttons {
        display: flex;
@@ -1328,20 +1319,19 @@ margin-top: 0;
   justify-content: center;
   margin-bottom: 2.5rem;
   font-family: var(--font-headings);
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: 3rem;
   font-weight: 400;
-  text-align: justify;
+  text-align: center;
+  text-transform: uppercase;
 }
 .songs {
-    flex: 1;
     flex-direction: column;
-    position: relative;
-    margin:12rem 1rem 12rem 7rem;
-    bottom: 1.4rem;
+    width: 100vw;
     z-index: 2;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
     footer {
@@ -1391,14 +1381,12 @@ margin-top: 0;
     }
 
     .contact-me-info {
-      display: block;
-      transform: translate(-65vw, 50vw);
+      margin-left: 0;
     }
 
-    #contact-form {
-      display: block;
-      transform: translateY(-28vw);
-      margin-left: clamp(10vw, 15vw, 30vw);
+    .contact-me-form{
+      margin-right: 0;
+      flex-direction: column;
     }
 
     #maaike-text {
