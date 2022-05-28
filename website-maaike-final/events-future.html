@@ -43,11 +43,46 @@
                 </div>
             </ul>
         </nav>
+
+        <div class="logo-hamMenu">
+            <div id="hamburger-menu" onclick="openMobileMenu(this)">
+               
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <ul class="responsive-menu">
+                    <br>
+                    <br>
+                    <li><a href="">About me</a></li>
+                    <li><a id="about-us" href="about me">Listen now</a></li>
+                    <li><a id="idea" href="#inspo">Events</a></li>
+                    <li><a href="">Contact me</a></li>
+                    <span class="lang-buttons">
+                        <!-- english version -->
+                        <a href="index.html">
+                            <button class="lang-button">EN</button>
+                        </a>
+                        
+                        <!-- dutch version -->
+                        <a href="index-nl.html">
+                            <button class="lang-button">NL</button>
+                        </a>
+                       
+                        <!-- italian version -->
+                        <a href="index-it.html">
+                            <button class="lang-button">IT</button>
+                        </a>
+                    </span>
+                </ul>
+                
+            </div>
+             <li class="Logo"><a href="#home"><img src="images/logo.png"></a></li>
+        </div> 
     </header>
     <section id="events-details">
         <h1>Future appearances</h1>
         <div class="event-list">
-            <div class="container-box">
+            <div class="container-box -row1">
                 <p class="name-event">Hertog Jan Brouwerij</p>
                 <p class="place-event">Arcen</p>
                 <p class="month-event">May, 2022</p>
@@ -57,7 +92,7 @@
                 </a>
                 <img id="stem" src="images/stemone.png" alt="">
             </div>
-            <div class="container-box">
+            <div class="container-row1">
                 <img id="flower" src="images/flower.png" alt="">
                 <p class="name-event">Puurliedjes Popei</p>
                 <p class="place-event">Eindhoven</p>
@@ -67,7 +102,7 @@
                     View Event
                 </a>
             </div>
-            <div class="container-box">
+            <div class="container-box-row">
                 <p class="name-event">Hertog Jan Brouwerij</p>
                 <p class="place-event">Arcen</p>
                 <p class="month-event">June, 2022</p>
@@ -119,6 +154,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
