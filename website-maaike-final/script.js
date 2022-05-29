@@ -35,28 +35,28 @@ function submitForm() {
 }
 
 //Vinyl
+
+//Checks if the position of the vinyl plate aligns with the center of the player
 function recordOnPlayer(el1, el2) {
-  el1.offsetBottom = el1.offsetTop + el1.offsetHeight;
-  el1.offsetRight = el1.offsetLeft + el1.offsetWidth;
-  el2.offsetBottom = el2.offsetTop + el2.offsetHeight;
-  el2.offsetRight = el2.offsetLeft + el2.offsetWidth;
+  const postionPlayer = el1.getBoundingClientRect();
+  const positionVinyl = el2.getBoundingClientRect();
 
   return !(
-    el1.offsetBottom < el2.offsetTop ||
-    el1.offsetTop > el2.offsetBottom ||
-    el1.offsetRight < el2.offsetLeft ||
-    el1.offsetLeft > el2.offsetRight
+    postionPlayer.top > positionVinyl.bottom ||
+    postionPlayer.right < positionVinyl.left ||
+    postionPlayer.bottom < positionVinyl.top ||
+    postionPlayer.left > positionVinyl.right
   );
 }
 
 var songs = new Array("audio/Maaike Song.mp3", "audio/Maaike Song 2.mp3");
 var needle = document.querySelector(".needle");
 var plates = document.getElementsByClassName("record-plate");
-var player = document.getElementById("vinyl-holder");
+var player = document.querySelector("#plate-spot");
 
-var vinylSF = new Audio("audio/vinyl sf.mp3");
-vinylSF.loop = true;
-vinylSF.volume = 0.05;
+var vinylSound = new Audio("audio/vinyl sf.mp3");
+vinylSound.loop = true;
+vinylSound.volume = 0.05;
 var audio = new Audio();
 
 for (var plate of plates) {
@@ -82,9 +82,11 @@ function dragElement(elmnt) {
     // get the mouse cursor position at startup:
     pos3 = e.clientX;
     pos4 = e.clientY;
+    elmnt.style.zIndex = 2
+    elmnt.classList.remove("fixed-on-player");
     elmnt.classList.remove("playing");
     audio.pause();
-    vinylSF.pause();
+    vinylSound.pause();
     needle.classList.remove("on-vinyl");
     audio.currentTime = 0;
     document.onmouseup = closeDragElement;
@@ -112,12 +114,15 @@ function dragElement(elmnt) {
 
     audio.src = songs[[...plates].indexOf(elmnt)];
 
-    if (recordOnPlayer(elmnt, player)) {
+    if (recordOnPlayer(player, elmnt)) {
+      elmnt.style.zIndex = 1
+      elmnt.classList.add("fixed-on-player");
       needle.classList.add("on-vinyl");
       setTimeout(function () {
         audio.play();
-        vinylSF.play();
+        vinylSound.play();
         elmnt.classList.add("playing");
+
       }, 1000);
     }
   }
@@ -149,6 +154,3 @@ function topFunction() {
   document.body.scrollTop = 0; // this is for safari
   document.documentElement.scrollTop = 0; // this is for everything with chromium and firefox
 }
-
-
-
