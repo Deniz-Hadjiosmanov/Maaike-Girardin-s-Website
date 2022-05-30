@@ -654,6 +654,35 @@ footer img {
 }
 
 /* ---------------------------------RESPONSIVE CODE------------------------------ */
+
+@media only screen and (max-width: 1200px) {
+  .body-home {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-logo a {
+    display: block;
+  }
+
+  #home-socials img {
+    width: 5vw;
+  }
+
+  /*EVENTS-FUTURE*/
+.name-event,
+.month-event,
+.place-event{
+  font-size: 1rem;
+}
+
+
+
+}
+
+
 @media only screen and (max-width: 1000px) and (min-width: 760px) {
 
   /*HEADER*/
@@ -975,23 +1004,7 @@ footer img {
 }
 
 
-@media only screen and (max-width: 1200px) {
-  .body-home {
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
 
-  .nav-logo a {
-    display: block;
-  }
-
-  #home-socials img {
-    width: 5vw;
-  }
-
-}
 
 
 @media only screen and (max-width: 700px) {
@@ -1417,17 +1430,17 @@ footer img {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center;   
-     
+      text-align: center;
+
   }
-  
+
     .event-list {
       width: 100vw;
       display: grid;
       align-items: end;
       justify-content: center;
       overflow: scroll;
-    
+
   }
   #stem{
     display: none;
@@ -1439,7 +1452,7 @@ footer img {
     width: 47vw;
   }
   #events-details h1 {
-     overflow: hidden; 
+     overflow: hidden;
 }
 }
 
