@@ -25,15 +25,6 @@ html {
 
 /* HEADER */
 header {
-
-    position: fixed;
-    background-color: var(--color-green);
-    height: 11vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    width: 100%;
   position: fixed;
   background-color: var(--color-green);
   height: 11vh;
@@ -657,9 +648,6 @@ footer img {
   width: 1.8vw;
   padding: 0 0.75rem;
 }
-.Logo{
-    display: none;
-}
 
 .Logo {
   display: none;
@@ -760,17 +748,8 @@ footer img {
     padding: 0 0.5rem;
   }
 
-  .desktop-menu li{
-      font-size: 2vw;
-  }
-  
-  .desktop-menu .nav-language img  {
-    width: 3.1vw;
-    height: auto;
-}
-
-/*---Events Page----*/
-#events-details {
+  /*------Events-----*/
+  #events-details {
     position: absolute;
     z-index: -3;
     background-color: var(--color-green);
@@ -780,20 +759,33 @@ footer img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
     overflow: scroll;
-    touch-action: auto;
+    -webkit-overflow-scrolling: touch;
 }
-.event-list {
+
+  .event-list {
     width: 100vw;
-    display: flex;
-    align-items: center;
+    display: grid;
+    align-items: end;
     justify-content: center;
-    margin: 0;
-    flex-direction: column;
+    grid-template-columns: 33% 33%;
+    justify-items: center;
+    overflow: scroll;
 }
-
+#stem{
+  display: none;
 }
-
+#flower{
+  display: none;
+}
+.container-box{
+  width: 20vw;
+}
+.name-event{
+  font-size: large;
+}
+}
 
 #hamburger-menu {
   margin: auto 0;
@@ -918,68 +910,6 @@ footer img {
 }
 
 #hamburger-menu {
-    margin: auto 0;
-    display: none;
-    cursor: pointer;
-}
-
-#hamburger-menu div {
-    width: 35px;
-    height: 3px;
-    margin: 6px 0;
-    background-color: black;
-    transition: 0.4s;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.open .line1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.open .line2 {
-    opacity: 0;
-}
-
-.open .line3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
-}
-
-.open .responsive-menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.responsive-menu {
-    display: none;
-    position: absolute;
-    background: #C3D67C;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: 0px;
-    /* to hide the menu */
-    text-align: left;
-    z-index: 1;
-    transition: 1s;
-}
-
-.responsive-menu li {
-    padding-bottom: 25px;
-}
-
-.responsive-menu a {
-    color: black;
-    font-weight: 600;
-    text-decoration: none;
   margin: auto 0;
   display: none;
   cursor: pointer;
@@ -1042,27 +972,10 @@ footer img {
   color: var(--color-black);
   font-weight: 600;
   text-decoration: none;
-
 }
 
 
 @media only screen and (max-width: 1200px) {
-    .body-home {
-        height: 100%;
-        width: 100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .nav-logo a {
-        display: block;
-    }
-
-    #home-socials img {
-        width: 5vw;
-    }
-   
-
   .body-home {
     height: 100%;
     width: 100%;
@@ -1078,22 +991,10 @@ footer img {
     width: 5vw;
   }
 
-
 }
 
 
 @media only screen and (max-width: 700px) {
-
-    .Logo{
-        display: block;
-    }
-    .nav-logo li img{
-       width: 1vw;
-    }
-    .desktop-menu li{
-        font-size: 2vw;
-    }
-
   .Logo {
     display: block;
   }
@@ -1105,51 +1006,10 @@ footer img {
   .desktop-menu li {
     font-size: 2vw;
   }
-
 }
 
 
 @media only screen and (max-width: 760px) {
-
-    .desktop-menu li{
-        font-size: 2vw;
-    }
-    #hamburger-menu .box-menu-language {
-      visibility: visible;
-      display: flex;
-      flex: 0;
-      margin-top: 40px;
-    }
-  
-    .lines {
-      position: absolute;
-      top: 2.5rem;
-      right: 1.5rem;
-      z-index: 2;
-      display: block;
-    }
-  
-    .body-home {
-      height: 100%;
-      width: 100%;
-      overflow: scroll;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    #hamburger-menu {
-      display: block;
-      margin-right: 5%;
-    }
-  
-    /* CONTACT ME */
-    .contact-me-tree {
-      display: none;
-    }
-
-  /* CONTACT ME */
-  .contact-me-tree {
-    display: none;
-  }
 
   .desktop-menu li {
     font-size: 2vw;
@@ -1180,7 +1040,6 @@ footer img {
   #hamburger-menu {
     display: block;
     margin-right: 5%;
-
   }
 
   .nav-logo li img {
@@ -1224,11 +1083,6 @@ footer img {
     border: none;
     cursor: pointer;
   }
-
-  .web-navigation {
-    display: none;
-  }
-
 
   #home-socials img {
     width: 7vw;
@@ -1337,56 +1191,6 @@ footer img {
     transform: rotate(45deg) translate(-6px, -8px);
   }
 
-
-   .open .responsive-menu {
-       position: absolute;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: flex-start;
-       z-index: -1;
-       margin-top: 10vh;
-   }
-   
-   .Logo {
-       display: block;
-   }
-    #hamburger-menu .box-menu-language {
-        visibility: visible;
-        display: flex;
-        flex: 0;
-        margin-top: 40px;
-    }
-
-    .body-home {
-        height: 100%;
-        width: 100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .responsive-menu li a {
-        position: relative;
-        text-decoration: none;
-        color: black;
-        font-family: 'Grandstander', cursive;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 1rem;
-        text-align: right;
-        list-style: none;
-    }
-
-    #hamburger-menu {
-        display: block;
-        margin-right: 5%;
-    }
-
-    /* CONTACT ME */
-.contact-me-tree {
-
-}
-
   .open .responsive-menu {
     position: absolute;
     display: flex;
@@ -1397,7 +1201,9 @@ footer img {
     margin-top: 10vh;
   }
 
- 
+  .Logo {
+    display: block;
+  }
 
 
   /* CONTACT ME */
@@ -1495,15 +1301,25 @@ footer img {
 
   #hamburger-menu {
     display: block;
-    margin-right: -59%;
-  }
 
-  
+    margin-right: -59%;
+
+  }
 
   .lines,
   .line1,
   .line2,
   .line3 {
+
+    margin-right: -89%;
+
+  }
+
+  .lines,
+  .line1,
+  .line2,
+  .line3 {
+
     width: 35px;
     height: 3px;
     margin: 6px 0;
@@ -1589,7 +1405,43 @@ footer img {
     margin-top: 0.3rem;
     padding: 0 0.5rem;
   }
- }
+
+
+    /*------Events-----*/
+    #events-details {
+      position: absolute;
+      z-index: -3;
+      background-color: var(--color-green);
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;   
+     
+  }
+  
+    .event-list {
+      width: 100vw;
+      display: grid;
+      align-items: end;
+      justify-content: center;
+      overflow: scroll;
+    
+  }
+  #stem{
+    display: none;
+  }
+  #flower{
+    display: none;
+  }
+  .container-box{
+    width: 47vw;
+  }
+  #events-details h1 {
+     overflow: hidden; 
+}
+}
 
 
 @media only screen and (max-width: 550px) {
@@ -1619,57 +1471,6 @@ footer img {
     display: none;
   }
 
-
-@media only screen and (max-width: 550px) {
-
-    /* CONTACT ME */
-    .contact-me-tree {
-    display: none;
-    }
-  
-    #home-socials img {
-      width: 7vw;
-    }
-  
-    footer {
-      display: inline-block;
-      width: 100%;
-      position: absolute;
-      text-align: center;
-      height: 3%;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-
-    /* CONTACT ME */
-    .contact-me-tree {
-      display: none;
-    }
-  
-    .contact-me-info {
-      display: block;
-      transform: translate(-65vw, 50vw);
-    }
-  
-    #contact-form {
-      display: block;
-      transform: translateY(-28vw);
-      margin-left: clamp(10vw, 15vw, 30vw);
-    }
-  
-    #maaike-text {
-      margin-top: 20vh;
-      text-align: center;
-      font-size: 1.1rem;
-      padding-top: 0;
-    }
-  
-    #maaike-picture img {
-      display: none;
-    }
-  }
-
   .contact-me-info {
     margin-left: 0;
   }
@@ -1689,5 +1490,8 @@ footer img {
   #maaike-picture img {
     display: none;
   }
+.name-event{
+  font-size: large;
 }
 
+}
