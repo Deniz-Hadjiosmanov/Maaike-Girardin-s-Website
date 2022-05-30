@@ -27,22 +27,53 @@
     <header>
         <nav>
             <ul class="desktop-menu">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about-me">About me</a></li>
-                <li><a href="index.html#listen-now">Listen now</a></li>
-                <li class="nav-logo"><a href="index.html#home"><img src="images/logo.png"></a></li>
-                <li><a href="index.html#events">Events</a></li>
-                <li><a href="index.html#contact-me">Contact me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#listen-now">Listen now</a></li>
+                <li class="nav-logo"><a href="#home"><img src="images/logo.png"></a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact-me">Contact me</a></li>
                 <div class="drop-down-language">
                     <li class="nav-language"><a><img src="images/language.png"></a></li>
                     <div class="drop-down-content">
-                        <a href="events-past.html">EN</a>
-                        <a href="events-past-nl.html">NL</a>
-                        <a href="events-past-it.html">IT</a>
+                        <a href="index.html">EN</a>
+                        <a href="index-nl.html">NL</a>
+                        <a href="index-it.html">IT</a>
                     </div>
                 </div>
             </ul>
         </nav>
+        <a id="responsive-logo" href="#home"><img src="images/logo.png"></a>
+        <div id="hamburger-menu" onclick="openMobileMenu(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <ul class="responsive-menu">
+                <br>
+                <br>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about-me">About me</a></li>
+                <li><a id="about-us" href="index.html#listen-now">Listen now</a></li>
+                <li><a id="idea" href="index.html#events">Events</a></li>
+                <li><a href="index.html#contact-me">Contact me</a></li>
+                <span id="lang-button-container">
+                    <!-- english version -->
+                    <a href="index.html">
+                        <button class="lang-button">EN</button>
+                    </a>
+                    <hr>
+                    <!-- dutch version -->
+                    <a href="index-nl.html">
+                        <button class="lang-button">NL</button>
+                    </a>
+                    <hr>
+                    <!-- italian version -->
+                    <a href="index-it.html">
+                        <button class="lang-button">IT</button>
+                    </a>
+                </span>
+            </ul>
+        </div>
     </header>
     <section id="events-details">
         <h1>Past Events</h1>
