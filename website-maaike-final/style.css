@@ -572,7 +572,6 @@ c {
   box-shadow: rgba(26, 59, 31, 0.6) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 0.2rem;
-  transition: transform 500ms;
 }
 
 .container-box #flower {
