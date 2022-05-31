@@ -43,6 +43,37 @@
                 </div>
             </ul>
         </nav>
+        <a id="responsive-logo" href="#home"><img src="images/logo.png"></a>
+        <div id="hamburger-menu" onclick="openMobileMenu(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <ul class="responsive-menu">
+                <br>
+                <br>
+                <li><a href="index.html#home">Casa</a></li>
+                <li><a href="index.html#about-me">Riguardo a me</a></li>
+                <li><a href="index.html#listen-now">Ascolta</a></li>
+                <li><a href="index.html#events">Eventi</a></li>
+                <li><a href="index.html#contact-me">Contattami</a></li>
+                <span id="lang-button-container">
+                    <!-- english version -->
+                    <a href="events-past.html">
+                        <button class="lang-button">EN</button>
+                    </a>
+                    <hr>
+                    <!-- dutch version -->
+                    <a href="events-past-nl.html">
+                        <button class="lang-button">NL</button>
+                    </a>
+                    <hr>
+                    <!-- italian version -->
+                    <a href="events-past-it.html">
+                        <button class="lang-button">IT</button>
+                    </a>
+                </span>
+            </ul>
+        </div>
     </header>
     <section id="events-details">
         <h1>Eventi Passati</h1>
@@ -109,3 +140,6 @@
             </a>
         </div>
     </section>
+    <script src="script.js"></script>
+</body>
+</html>
