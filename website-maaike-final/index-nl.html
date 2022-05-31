@@ -44,39 +44,36 @@
             </ul>
         </nav>
 
-        <div class="logo-hamMenu">
-            <div id="hamburger-menu" onclick="openMobileMenu(this)">
-
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                <ul class="responsive-menu">
-                    <br>
-                    <br>
-                    <li><a href="index-nl.html#about-me">Oven Mij</a></li>
-                    <li><a id="about-us" href="index-nl.html#listen-now">Luister nu</a></li>
-                    <li><a id="idea" href="index-nl.html#events">Evenementen</a></li>
-                    <li><a href="index-nl.html#contact-me">Contact</a></li>
-                    <span class="lang-buttons">
-                        <!-- english version -->
-                        <a href="index.html">
-                            <button class="lang-button">EN</button>
-                        </a>
-
-                        <!-- dutch version -->
-                        <a href="index-nl.html">
-                            <button class="lang-button">NL</button>
-                        </a>
-
-                        <!-- italian version -->
-                        <a href="index-it.html">
-                            <button class="lang-button">IT</button>
-                        </a>
-                    </span>
-                </ul>
-
-            </div>
-             <li class="Logo"><a href="#home"><img src="images/logo.png"></a></li>
+        <a id="responsive-logo" href="#home"><img src="images/logo.png"></a>
+        <div id="hamburger-menu" onclick="openMobileMenu(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <ul class="responsive-menu">
+                <br>
+                <br>
+                <li><a href="index-nl.html#home">Thuis</a></li>
+                <li><a href="index-nl.html#about-me">Oven Mij</a></li>
+                <li><a href="index-nl.html#listen-now">Luister nu</a></li>
+                <li><a href="index-nl.html#events">Evenementen</a></li>
+                <li><a href="index-nl.html#contact-me">Contact</a></li>
+                <span id="lang-button-container">
+                    <!-- english version -->
+                    <a href="index.html">
+                        <button class="lang-button">EN</button>
+                    </a>
+                    <hr>
+                    <!-- dutch version -->
+                    <a href="index-nl.html">
+                        <button class="lang-button">NL</button>
+                    </a>
+                    <hr>
+                    <!-- italian version -->
+                    <a href="index-it.html">
+                        <button class="lang-button">IT</button>
+                    </a>
+                </span>
+            </ul>
         </div>
     </header>
 
@@ -136,17 +133,35 @@
 
     <!-- LISTEN NOW PAGE -->
     <section id="listen-now">
-      <div class="record-plate" id="plate-1">
+        <div class="record-plate" id="plate-1">
             <img src="images/vinyl-cover-photo-two.png" alt="">
         </div>
         <div class="record-plate" id="plate-2">
             <img src="images/vinyl-cover-photo.png" alt="">
         </div>
-    <div id="vinyl-holder">
-        <img class="needle" src="images/needle.png"/>
-        <img id="plate-spot" src="images/vinyl-plate.png">
-    </div>
-</section>
+        <div id="vinyl-holder">
+            <img class="needle" src="images/needle.png" />
+            <img id="plate-spot" src="images/vinyl-plate.png">
+        </div>
+           <!-- Tablet and Phone videos -->
+           <h1 id="listen-now-responsive">Luister nu</h1>
+           <div class="songs">
+               <div class="home-box-body-song">
+                   <iframe width="360" height="240" src="https://www.youtube.com/embed/3RmwLlVeOdc"
+                       title="YouTube video player" frameborder="0"
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                       allowfullscreen></iframe>
+                   <br>
+               </div>
+               <div class="home-box-body-song">
+                   <iframe width="360" height="240" src="https://www.youtube.com/embed/bxI-vgAiEG8"
+                       title="YouTube video player" frameborder="0"
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                       allowfullscreen></iframe>
+                   <br>
+               </div>
+           </div>
+    </section>
 
 
     <!-- EVENTS PAGE -->
@@ -154,7 +169,7 @@
         <div id="events-container">
             <h1>EVENEMENTEN</h1>
             <a href="events-past-nl.html">
-                 <p>Eerdere Evenementen</p>
+                <p>Eerdere Evenementen</p>
             </a>
             <a href="events-future-nl.html">
                 <p>
@@ -166,11 +181,11 @@
 
     <!-- CONTACT ME PAGE -->
     <section id="contact-me">
-      <div class="contact-me-tree">
-          <video id="myVid" muted>
-              <source src="images/blooming.webm" type="video/mp4">
-          </video>
-      </div>
+        <div class="contact-me-tree">
+            <video id="myVid" muted>
+                <source src="images/blooming.webm" type="video/mp4">
+            </video>
+        </div>
         <div class="contact-me-form">
             <form id="contact-form" action="https://formsubmit.co/n.v.d.nikoleta@gmail.com" method="POST">
                 <input type="hidden" name="_captcha" value="false">

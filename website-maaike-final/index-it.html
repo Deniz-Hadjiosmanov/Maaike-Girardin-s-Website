@@ -44,39 +44,36 @@
             </ul>
         </nav>
 
-        <div class="logo-hamMenu">
-            <div id="hamburger-menu" onclick="openMobileMenu(this)">
-
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                <ul class="responsive-menu">
-                    <br>
-                    <br>
-                    <li><a href="index-it.html#about-me">Riguardo a me</a></li>
-                    <li><a id="about-us" href="index-it.html#listen-now">Ascolta</a></li>
-                    <li><a id="idea" href="index-it.html#events">Eventi</a></li>
-                    <li><a href="index-it.html#contact-me">Contattami</a></li>
-                    <span class="lang-buttons">
-                        <!-- english version -->
-                        <a href="index.html">
-                            <button class="lang-button">EN</button>
-                        </a>
-
-                        <!-- dutch version -->
-                        <a href="index-nl.html">
-                            <button class="lang-button">NL</button>
-                        </a>
-
-                        <!-- italian version -->
-                        <a href="index-it.html">
-                            <button class="lang-button">IT</button>
-                        </a>
-                    </span>
-                </ul>
-
-            </div>
-             <li class="Logo"><a href="index-it.html"><img src="images/logo.png"></a></li>
+        <a id="responsive-logo" href="#home"><img src="images/logo.png"></a>
+        <div id="hamburger-menu" onclick="openMobileMenu(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <ul class="responsive-menu">
+                <br>
+                <br>
+                <li><a href="index-it.html#home">Casa</a></li>
+                <li><a href="index-it.html#about-me">Riguardo a me</a></li>
+                <li><a id="about-us" href="index-it.html#listen-now">Ascolta</a></li>
+                <li><a id="idea" href="index-it.html#events">Eventi</a></li>
+                <li><a href="index-it.html#contact-me">Contattami</a></li>
+                <span id="lang-button-container">
+                    <!-- english version -->
+                    <a href="index.html">
+                        <button class="lang-button">EN</button>
+                    </a>
+                    <hr>
+                    <!-- dutch version -->
+                    <a href="index-nl.html">
+                        <button class="lang-button">NL</button>
+                    </a>
+                    <hr>
+                    <!-- italian version -->
+                    <a href="index-it.html">
+                        <button class="lang-button">IT</button>
+                    </a>
+                </span>
+            </ul>
         </div>
     </header>
 
@@ -136,16 +133,35 @@
 
     <!-- LISTEN NOW PAGE -->
     <section id="listen-now">
-      <div class="record-plate" id="plate-1">
-                <img src="images/vinyl-cover-photo-two.png" alt="">
-            </div>
-            <div class="record-plate" id="plate-2">
-                <img src="images/vinyl-cover-photo.png" alt="">
-            </div>
+        <div class="record-plate" id="plate-1">
+            <img src="images/vinyl-cover-photo-two.png" alt="">
+        </div>
+        <div class="record-plate" id="plate-2">
+            <img src="images/vinyl-cover-photo.png" alt="">
+        </div>
         <div id="vinyl-holder">
-            <img class="needle" src="images/needle.png"/>
+            <img class="needle" src="images/needle.png" />
             <img id="plate-spot" src="images/vinyl-plate.png">
         </div>
+
+           <!-- Tablet and Phone videos -->
+           <h1 id="listen-now-responsive">Ascolta</h1>
+           <div class="songs">
+               <div class="home-box-body-song">
+                   <iframe width="360" height="240" src="https://www.youtube.com/embed/3RmwLlVeOdc"
+                       title="YouTube video player" frameborder="0"
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                       allowfullscreen></iframe>
+                   <br>
+               </div>
+               <div class="home-box-body-song">
+                   <iframe width="360" height="240" src="https://www.youtube.com/embed/bxI-vgAiEG8"
+                       title="YouTube video player" frameborder="0"
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                       allowfullscreen></iframe>
+                   <br>
+               </div>
+           </div>
     </section>
 
 
@@ -157,7 +173,9 @@
                 <p>Eventi passati</p>
             </a>
             <a href="events-future-it.html">
-                <p><c>APPARIZIONI FUTURE</c></p>
+                <p>
+                    <c>APPARIZIONI FUTURE</c>
+                </p>
             </a>
         </div>
     </section>
