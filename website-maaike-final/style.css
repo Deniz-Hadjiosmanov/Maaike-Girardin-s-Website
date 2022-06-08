@@ -390,6 +390,12 @@ c {
   font-weight: 530;
   padding-bottom: 15px;
   font-weight: 600;
+  transition: transform 0.5s ease;
+}
+
+#events-container p:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #events-container a {
