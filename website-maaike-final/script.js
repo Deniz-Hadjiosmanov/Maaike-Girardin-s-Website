@@ -34,8 +34,7 @@ function submitForm() {
   window.location.reload();
 }
 
-//Vinyl
-
+//VINYL PLAYER
 //Checks if the position of the vinyl plate aligns with the center of the player
 function recordOnPlayer(el1, el2) {
   const postionPlayer = el1.getBoundingClientRect();
@@ -152,5 +151,5 @@ function scrollFunction() {
 }
 function topFunction() {
   document.body.scrollTop = 0; // this is for safari
-  document.documentElement.scrollTop = 0; // this is for everything with chromium and firefox
+  document.documentElement.scrollTop = 0; // this is for everything with chrome and firefox
 }
